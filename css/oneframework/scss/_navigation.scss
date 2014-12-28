@@ -1,0 +1,30 @@
+
+// Navigation ---------------- /
+
+nav {
+    height: $base-nav-height;
+    float: right;
+
+    ul {
+      margin: $nomargin;
+      padding: $nopadding;
+      list-style-type: none;
+      @include clearfix;
+
+      li {
+        float: left;
+        position: relative;
+
+        a {
+          height: auto;
+          margin: $nomargin;
+          padding: $base-horizontal-padding-large;
+          font-family: $base-font;
+          text-decoration: none;
+          line-height: $base-nav-line-height;
+          display: block;
+          @include uppercase;
+        }
+      }
+    }
+  }

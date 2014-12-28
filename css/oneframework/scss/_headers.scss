@@ -1,0 +1,15 @@
+
+// Headers ------------------ //
+
+@mixin header {
+  padding: 20px 0 0;
+  &.fixed {
+    @include fixed-header;
+    &.dark {
+      background: $fixed-dark;
+    }
+    &.light {
+      background: $fixed-light;
+    }
+  }
+}
