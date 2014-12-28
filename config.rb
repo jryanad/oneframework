@@ -1,6 +1,7 @@
 # Require any additional compass plugins here.
 
 sass_dir           = "css/oneframework/scss"
+#http_path          = "/dist"
 css_dir            = "css"
 fonts_dir          = "css/fontawesome/fonts"
 images_dir         = "images"
@@ -41,4 +42,3 @@ javascripts_dir    = "js"
 # sass-convert -R --from scss --to sass lib scss && rm -rf sass && mv scss sass
 
 Sass::Script::Number.precision = 9
-
