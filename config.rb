@@ -1,7 +1,6 @@
-# Require any additional compass plugins here.
+# Project config file
 
 sass_dir           = "css/oneframework/scss"
-#http_path          = "/dist"
 css_dir            = "css"
 fonts_dir          = "css/fontawesome/fonts"
 images_dir         = "images"
