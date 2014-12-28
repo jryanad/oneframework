@@ -26,6 +26,4 @@ Thumbs.db
 .AppleDouble
 ._*
 
-*.tmproj
-/nbproject
-/nbproject/private/
+.sass-cache
