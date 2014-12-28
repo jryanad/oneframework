@@ -1,0 +1,31 @@
+
+// Base Text -------------- //
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.lrg-text            { font-size: $lrg-text; }
+.sm-text             { font-size: $sm-text; }
+
+p { margin: $nomargin; padding: $base-vertical-padding-small; }
+
+h1, h2, h3, h4, h5 {
+  color:       $base-title-color;
+  font-family: $base-title-font;
+  font-weight: $base-font-weight;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+ 
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+strong {
+  font-weight: 700;
+}
+
