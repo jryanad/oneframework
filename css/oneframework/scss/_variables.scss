@@ -16,14 +16,11 @@ $secondary-accent-color: #3D4F63;
 // Base Typography -------------- //
 
 $base-font: Helvetica, Arial, sans-serif;
-$base-font-size: 14px !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $base-font-color: $grey !default;
-$base-line-height:             1.428 !default; // 20/14
+$base-line-height:             1.428571429 !default; // 20/14
 $base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 20px
-
-$lrg-text: ceil($base-font-size * 1.38) !default;
-$sm-text:  ceil($base-font-size * 0.85) !default;
 
 $base-title-font: $base-font;
 $base-title-font-weight: 500;
@@ -32,17 +29,20 @@ $base-title-color: $darkgrey !default;
 $base-link-color: $primary-accent-color !default;
 $base-link-hover-color: lighten($primary-accent-color, 10%) !default;
 
-$base-title-h1: ceil($base-font-size * 2.40) !default; // 34px
-$base-title-h2: ceil($base-font-size * 2.10) !default; // 30px
-$base-title-h3: ceil($base-font-size * 1.70) !default; // 24px
-$base-title-h4: ceil($base-font-size * 1.25) !default; // 18px
-$base-title-h5: $base-font-size !default;
-$base-title-h6: ceil($base-font-size * 0.85) !default; // 12px
+$base-title-h1: floor($base-font-size * 2.25) !default; // 36px
+$base-title-h2: ceil($base-font-size * 1.85) !default; // 30px
+$base-title-h3: ceil($base-font-size * 1.60) !default; // 26px
+$base-title-h4: ceil($base-font-size * 1.35) !default; // 22px
+$base-title-h5: ceil($base-font-size * 1.25) !default; // 20px
+$base-title-h6: ceil($base-font-size * 1.10) !default; // 18px
 
 $base-title-font:    $base-font !default;
 $base-title-font-weight:    500 !default;
 $base-title-line-height:    1.1 !default;
 $base-title-color:          inherit !default;
+
+$lrg-text: ceil($base-font-size * 1.38) !default;
+$sm-text:  ceil($base-font-size * 0.85) !default;
 
 
 // Spacing --------------------- //
@@ -52,31 +52,37 @@ $nopadding: 0px !default;
 
 // Vertical //
 
-$base-vertical-margin:  10px 0 !default;
-$base-vertical-padding: 10px 0 !default;
+$base-vertical-margin:  10px !default;
+$base-vertical-padding: 10px !default;
 
-$base-vertical-margin-small:  5px 0 !default;
-$base-vertical-padding-small: 5px 0 !default;
+$base-vertical-margin-small:  				ceil($base-vertical-margin / 2); // 5px
+$base-vertical-padding-small: 				ceil($base-vertical-padding / 2); // 5px
 
-$base-vertical-margin-large:  15px 0 !default;
-$base-vertical-padding-large: 15px 0 !default;
+$base-vertical-margin-medium:  				ceil($base-vertical-margin + 5); // 15px
+$base-vertical-padding-medium: 				ceil($base-vertical-padding + 5); // 15px
 
-$base-vertical-margin-extra-large:  20px 0 !default;
-$base-vertical-padding-extra-large: 20px 0 !default;
+$base-vertical-margin-large:  				ceil($base-vertical-margin * 2); // 20px
+$base-vertical-padding-large: 				ceil($base-vertical-padding * 2); // 20px
+
+$base-vertical-margin-extra-large:  	ceil($base-vertical-margin * 3); // 30px
+$base-vertical-padding-extra-large: 	ceil($base-vertical-padding * 3); // 30px
 
 // Horizontal //
 
-$base-horizontal-margin:  0 10px !default;
-$base-horizontal-padding: 0 10px !default;
+$base-horizontal-margin:  10px !default;
+$base-horizontal-padding: 10px !default;
 
-$base-horizontal-margin-small:  0 5px !default;
-$base-horizontal-padding-small: 0 5px !default;
+$base-horizontal-margin-small:  			ceil($base-horizontal-margin / 2); // 5px
+$base-horizontal-padding-small: 			ceil($base-horizontal-padding / 2); // 5px
 
-$base-horizontal-margin-large:  0 15px !default;
-$base-horizontal-padding-large: 0 15px !default;
+$base-horizontal-margin-medium:  			ceil($base-horizontal-margin + 5); // 15px
+$base-horizontal-padding-medium: 			ceil($base-horizontal-padding + 5); // 15px
 
-$base-horizontal-margin-extra-large:  0 20px !default;
-$base-horizontal-padding-extra-large: 0 20px !default;
+$base-horizontal-margin-large:  			ceil($base-horizontal-margin * 2); // 20px
+$base-horizontal-padding-large: 			ceil($base-horizontal-padding * 2); // 20px
+
+$base-horizontal-margin-extra-large:  ceil($base-horizontal-margin * 3); // 30px
+$base-horizontal-padding-extra-large: ceil($base-horizontal-padding * 3); // 30px
 
 
 // Navigation --------------------- //

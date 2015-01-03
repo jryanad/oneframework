@@ -113,3 +113,29 @@
 @mixin lowercase {
   text-transform: lowercase;
 }
+
+@mixin italic {
+  font-style: italic;
+}
+
+@mixin no-decoration {
+  text-decoration: none;
+}
+
+@mixin decoration {
+  text-decoration: underline;
+}
+
+@mixin outline {
+  outline: none;
+}
+
+// Buttons ---------------- //
+
+
+
+
+
+
+
+

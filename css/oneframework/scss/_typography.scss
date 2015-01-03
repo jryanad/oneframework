@@ -1,18 +1,32 @@
 
-// Base Text -------------- //
+/* Typography
+========================================================================== */
 
-.text-left           { text-align: left; }
-.text-right          { text-align: right; }
-.text-center         { text-align: center; }
-.lrg-text            { font-size: $lrg-text; }
-.sm-text             { font-size: $sm-text; }
-
-p { margin: $nomargin; padding: $base-vertical-padding-small; }
-
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   color:       $base-title-color;
   font-family: $base-title-font;
-  font-weight: $base-font-weight;
+  line-height: $base-title-line-height;
+}
+
+h1 { font-size: $base-title-h1; }
+h2 { font-size: $base-title-h2; }
+h3 { font-size: $base-title-h3; }
+h4 { font-size: $base-title-h4; }
+h5 { font-size: $base-title-h5; }
+h6 { font-size: $base-title-h6; }
+
+h1, h2, h3 {
+	margin-top: $base-line-height-computed;
+	margin-bottom: ($base-line-height-computed / 2);
+}
+
+h4, h5, h6 {
+	margin-top: ($base-line-height-computed / 2);
+	margin-bottom: ($base-line-height-computed / 2);
+}
+
+p {
+	margin: 0 0 ($base-line-height-computed / 2);
 }
 
 sub, sup {
@@ -28,4 +42,11 @@ sub { bottom: -0.25em; }
 strong {
   font-weight: 700;
 }
+
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify  			 { text-align: justify; }
+.lrg-text            { font-size: $lrg-text; }
+.sm-text             { font-size: $sm-text; }
 
