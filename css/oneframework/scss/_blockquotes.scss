@@ -1,0 +1,21 @@
+
+/* Blockquotes
+========================================================================== */
+
+blockquote {
+	margin: 0 0 $base-vertical-margin-medium;
+	padding: $base-horizontal-padding;
+	color: lighten($base-font-color, 25%);
+	line-height: $base-line-height;
+	border-left: 4px solid $primary-accent-color;
+}
+
+blockquote cite {
+	margin-top: 5px;
+	color: lighten($base-font-color, 25%);
+	font-size: $sm-text;
+	display: block;
+	&:before {
+		content: "- ";
+	}
+}

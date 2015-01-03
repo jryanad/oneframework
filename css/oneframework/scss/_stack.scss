@@ -1,0 +1,54 @@
+
+/* Stack
+========================================================================== */
+
+body {
+	background-color: $white;
+	font-family: $base-font;
+	font-size: $base-font-size;
+	font-weight: $base-font-weight;
+	color: $base-font-color;
+	line-height: $base-line-height;
+}
+
+a {
+	color: $primary-accent-color;
+	@include no-decoration;
+	@include outline;
+	&:hover,
+	&:focus {
+		color: lighten($primary-accent-color, 10%);
+	}
+}
+
+/* Sizing Classes -------------*/
+
+/* Verticals  bvm = base-vertical-margin, bvp = base-vertical-padding (10px) */
+
+.bvm { margin-top: $base-vertical-margin; margin-bottom: $base-vertical-margin; }
+.bvp { padding-top: $base-vertical-padding; padding-bottom: $base-vertical-padding; }
+
+.bvm-sm   { margin-top: $base-vertical-margin-small; margin-bottom: $base-vertical-margin-small; }
+.bvm-md   { margin-top: $base-vertical-margin-medium; margin-bottom: $base-vertical-margin-medium; }
+.bvm-lrg  { margin-top: $base-vertical-margin-large; margin-bottom: $base-vertical-margin-large; }
+.bvm-xlrg { margin-top: $base-vertical-margin-extra-large; margin-bottom: $base-vertical-margin-extra-large; }
+
+.bvp-sm   { padding-top: $base-vertical-padding-small; padding-bottom: $base-vertical-padding-small; }
+.bvp-md 	{ padding-top: $base-vertical-padding-medium; padding-bottom: $base-vertical-padding-medium; }
+.bvp-lrg 	{ padding-top: $base-vertical-padding-large; padding-bottom: $base-vertical-padding-large; }
+.bvp-xlrg { padding-top: $base-vertical-padding-extra-large; padding-bottom: $base-vertical-padding-extra-large; }
+
+/* Horizontals  bhm = base-horizontal-margin, bhp = base-horizontal-padding (10px) */
+
+.bhm { margin-left: $base-horizontal-margin; margin-right: $base-horizontal-margin; }
+.bhp { padding-left: $base-horizontal-padding; padding-right: $base-horizontal-padding; }
+
+.bhm-sm   { margin-left: $base-horizontal-margin-small; margin-right: $base-horizontal-margin-small; }
+.bhm-md   { margin-left: $base-horizontal-margin-medium; margin-right: $base-horizontal-margin-medium; }
+.bhm-lrg  { margin-left: $base-horizontal-margin-large; margin-right: $base-horizontal-margin-large; }
+.bhm-xlrg { margin-left: $base-horizontal-margin-extra-large; margin-right: $base-horizontal-margin-extra-large; }
+
+.bhp-sm   { padding-left: $base-horizontal-padding-small; padding-right: $base-horizontal-padding-small; }
+.bhp-md 	{ padding-left: $base-horizontal-padding-medium; padding-right: $base-horizontal-padding-medium; }
+.bhp-lrg 	{ padding-left: $base-horizontal-padding-large; padding-right: $base-horizontal-padding-large; }
+.bhp-xlrg { padding-left: $base-horizontal-padding-extra-large; padding-right: $base-horizontal-padding-extra-large; }
