@@ -1,6 +1,12 @@
 
 // Global Variables
 
+// Site Branding Colors ------------------- //
+
+$primary-accent-color:   #e24f3d;
+$secondary-accent-color: #73c6de;
+$tertiary-accent-color:  #666666;
+
 
 // Base Colors ------------------- //
 
@@ -10,14 +16,11 @@ $lightgrey: #999999 !default;
 $darkgrey:  #222222 !default;
 $white:     #ffffff !default;
 
-$primary-accent-color:   #ED6454;
-$secondary-accent-color: #3D4F63;
-
 // Base Typography -------------- //
 
 $base-font: Helvetica, Arial, sans-serif;
 $base-font-size: 16px !default;
-$base-font-weight: 400 !default;
+$base-font-weight: 300 !default;
 $base-font-color: $grey !default;
 $base-line-height:             1.428571429 !default; // 20/14
 $base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 20px
@@ -29,7 +32,7 @@ $base-title-color: $darkgrey !default;
 $base-link-color: $primary-accent-color !default;
 $base-link-hover-color: lighten($primary-accent-color, 10%) !default;
 
-$base-title-h1: floor($base-font-size * 2.25) !default; // 36px
+$base-title-h1: ceil($base-font-size * 2.25) !default; // 36px
 $base-title-h2: ceil($base-font-size * 1.85) !default; // 30px
 $base-title-h3: ceil($base-font-size * 1.60) !default; // 26px
 $base-title-h4: ceil($base-font-size * 1.35) !default; // 22px
@@ -89,4 +92,32 @@ $base-horizontal-padding-extra-large: ceil($base-horizontal-padding * 3); // 30p
 
 $base-nav-height: 50px;
 $base-nav-line-height: $base-nav-height;
+
+// Buttons --------------------- //
+
+$base-btn-class: ".btn";
+$base-btn-color: #ddd !default;
+$base-btn-height: 40px !default;
+
+$base-btn-font-color: #222 !default;
+$base-btn-font-size: $base-font-size;
+$base-btn-font-weight: $base-font-weight;
+$base-btn-font-family: $base-font;
+
+// These are based on the sites accent colors, you can add/remove based on needs 
+// name -> pre-defined accent color -> font color
+$base-btn-accent-colors: ('primary' $primary-accent-color #FFFFFF) ('secondary' $secondary-accent-color #FFFFFF) ('tertiary' $tertiary-accent-color #FFFFFF);
+
+$base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
+$base-btn-sizes: 'small' 'medium' 'large' 'jumbo';
+
+
+
+
+
+
+
+
+
+
 
