@@ -154,29 +154,31 @@ input#{$base-btn-class}, button#{$base-btn-class} {
   #{$base-btn-class}-3d {
     $base-btn-accent-bg-color: $base-btn-color;
     $base-btn-accent-font-color: $base-btn-font-color;
-    box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
     background: linear-gradient(top, lighten($base-btn-accent-bg-color, 2%), darken($base-btn-accent-bg-color, 2%));
     background-color: $base-btn-accent-bg-color;
     color: $base-btn-accent-font-color;
-    border: 1px solid darken($base-btn-accent-bg-color, 5%);
     position: relative;
     top: 0px;
     transition: all 0.3s ease;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
+    border: 1px solid darken($base-btn-accent-bg-color, 5%);
 
     &:hover, &:focus {
-      box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
       background: linear-gradient(top, lighten($base-btn-accent-bg-color, 5%), darken($base-btn-accent-bg-color, 5%));
       background-color: darken($base-btn-accent-bg-color, 5%);
       color: $base-btn-accent-font-color;
+      box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
     }
+
     &:active, &.is-active, &.active {
-      box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 2px 0px darken($base-btn-accent-bg-color, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
       background: linear-gradient(top, darken($base-btn-accent-bg-color, 2%), lighten($base-btn-accent-bg-color, 2%));
       background-color: darken($base-btn-accent-bg-color, 15%);
       color: $base-btn-accent-font-color;
-      border: 1px solid darken($base-btn-accent-bg-color, 5%);
       top: 5px;
+      box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 2px 0px darken($base-btn-accent-bg-color, 20%), 0px 3px 3px rgba(0, 0, 0, .2);
+      border: 1px solid darken($base-btn-accent-bg-color, 5%);
     }
+
     &.disabled {
       box-shadow: none;
       -webkit-appearance: none;
@@ -209,8 +211,8 @@ input#{$base-btn-class}, button#{$base-btn-class} {
 		background: linear-gradient(top, lighten($base-btn-accent-bg-color, 5%), darken($base-btn-accent-bg-color, 5%));
 		background-color: $base-btn-accent-bg-color;
 		color: $base-btn-accent-font-color;
-    border-color: darken($base-btn-accent-bg-color, 10%);
     box-shadow: 0px 1px 0px rgba(255, 255, 255, .5) inset, 0px 1px 2px rgba(0, 0, 0, .15);
+    border-color: darken($base-btn-accent-bg-color, 10%);
 
 
     &:hover, &:focus {
@@ -230,9 +232,9 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     #{$base-btn-class}-flat-#{$base-btn-accent-name} {
       background: $base-btn-accent-bg-color;
       color: $base-btn-accent-font-color;
-      border: none;
       transition: all 0.3s ease;
       box-shadow: none;
+      border: none;
 
       &:hover, &:focus {
         background: darken($base-btn-accent-bg-color, 5%);
@@ -257,9 +259,9 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     #{$base-btn-class}-border-#{$base-btn-accent-name} {
     	background: none;
       color: $base-btn-accent-bg-color;
+      transition: all 0.3s ease;
       box-shadow: none;
       border: 2px solid $base-btn-accent-bg-color;
-      transition: all 0.3s ease;
       
       &:hover, &:focus {
 				background: $base-btn-accent-bg-color;
@@ -307,8 +309,8 @@ input#{$base-btn-class}, button#{$base-btn-class} {
         background-color: darken($base-btn-accent-bg-color, 5%);
         color: $base-btn-accent-font-color;
         top: 5px;
-        border: 1px solid darken($base-btn-accent-bg-color, 5%);
         box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 2px 0px darken($base-btn-accent-bg-color, 10%), 0px 3px 3px rgba(0, 0, 0, .30);
+        border: 1px solid darken($base-btn-accent-bg-color, 5%);
       }
 
       &.disabled {
@@ -324,35 +326,35 @@ input#{$base-btn-class}, button#{$base-btn-class} {
   // .btn-large .btn-medium .btn-small
   #{$base-btn-class}-#{$base-btn-size} {
     @if $base-btn-size == 'jumbo' {
-      font-size: $base-btn-fs-jumbo;
       height: $base-btn-height * 1.6;
-      line-height: $base-btn-height * 1.6;
       padding: 0px ($base-btn-height * 1.6) * .8;
+      font-size: $base-btn-fs-jumbo;
+      line-height: $base-btn-height * 1.6;
     }
 
     @if $base-btn-size == 'large' {
-      font-size: $base-btn-fs-large;
       height: $base-btn-height * 1.2;
-      line-height: $base-btn-height * 1.2;
       padding: 0px ($base-btn-height * 1.2) * .8;
+      font-size: $base-btn-fs-large;
+      line-height: $base-btn-height * 1.2;
     }
 
     @if $base-btn-size == 'medium' {
-      font-size: $base-btn-fs-medium;
       height: $base-btn-height * .8;
-      line-height: $base-btn-height * .8;
       padding: 0px ($base-btn-height * .8) * .8;
+      font-size: $base-btn-fs-medium;
+      line-height: $base-btn-height * .8;
     }
 
     @if $base-btn-size == 'small' {
-      font-size: $base-btn-fs-small;
       height: $base-btn-height * .7;
-      line-height: $base-btn-height * .7;
       padding: 0px ($base-btn-height * .75) * .8;
+      font-size: $base-btn-fs-small;
+      line-height: $base-btn-height * .7;
     }
   }
 
-  //HEIGHT NEEDED FOR FORM ELEMENTS +2px on height
+  // Additional Height needed for Form Buttons
   input#{$base-btn-class}-#{$base-btn-size}, button#{$base-btn-class}-#{$base-btn-size} {
     @if $base-btn-size == 'large' {
       height: ($base-btn-height * 1.2) + 2;
