@@ -9,23 +9,15 @@ javascripts_dir    = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 #output_style = :expanded or :nested or :compact or :compressed
-  if environment != :production
-    output_style = :expanded
-    line_comments = true
-    disable_warnings = false
-    # give us all the info
-    disable_warnings = true
-    sass_options = {:quiet => true}
-  end
 
   
-  if environment == :production 
-    output_style = :compressed
-    line_comments = true
-    # keep the build output nice and clean
-    disable_warnings = true
-    sass_options = {:quiet => true}
-  end
+environment == :production 
+output_style = :compressed
+line_comments = true
+# keep the build output nice and clean
+disable_warnings = true
+sass_options = {:quiet => true}
+  
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
@@ -40,4 +32,3 @@ javascripts_dir    = "js"
 # and then run:
 # sass-convert -R --from scss --to sass lib scss && rm -rf sass && mv scss sass
 
-Sass::Script::Number.precision = 9

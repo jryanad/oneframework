@@ -1,7 +1,7 @@
 
 // Core Mixins ------------ //
 
-// Clearfix
+// Clearfix ---------- //
 
 @mixin clearfix() {
   &:before,
@@ -14,8 +14,7 @@
   }
 }
 
-// Hide & Show
-//------------------------- //
+// Peek-a-boo ---------- //
 
 @mixin show($display: block) {
   display: $display;
@@ -26,24 +25,39 @@
   visibility: hidden !important;
 }
 
+// Centered Content Block ---------- //
+
+@mixin centered-content-block () {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 // Fixed Positioning ---------- //
 
-@mixin fx-position ($top, $right, $bottom, $left) {
+@mixin fx-position ($top, $right, $bottom, $left, $z-index) {
+  position: fixed;
   top: $top;
   right: $right;
   bottom: $bottom;
   left: $left;
-  position: fixed;
+  z-index: $z-index;
 }
 
 // Absolute Positioning ------ //
 
-@mixin ab-position ($top, $right, $bottom, $left) {
+@mixin ab-position ($top, $right, $bottom, $left, $z-index) {
+  position: absolute;
   top: $top;
   right: $right;
   bottom: $bottom;
   left: $left;
-  position: absolute;
+  z-index: $z-index;
+}
+
+@mixin rel-position ($z-index) {
+  position: relative;
+  z-index: $z-index;
 }
 
 // Responsive Images --------- //
@@ -114,6 +128,12 @@
   background-image:         linear-gradient(to bottom, $fromColor, $toColor);
 }
 
+@mixin linear-gradient-inverse($fromColor, $toColor) {
+  background: $fromColor;
+  background-image: -webkit-linear-gradient(bottom, $fromColor, $toColor);
+  background-image:         linear-gradient(to top, $fromColor, $toColor);
+}
+
 // Linear Pattern Gradient
 
 @mixin pattern-linear-gradient($pattern, $fromColor, $toColor) {
@@ -121,6 +141,13 @@
   background-image: url($pattern); /* Fallback */
   background-image: url($pattern),   -webkit-linear-gradient(top, $fromColor, $toColor);
   background-image: url($pattern),   linear-gradient(to bottom, $fromColor, $toColor);
+}
+
+@mixin pattern-linear-gradient-inverse($pattern, $fromColor, $toColor) {
+  background: $fromColor;
+  background-image: url($pattern); /* Fallback */
+  background-image: url($pattern),   -webkit-linear-gradient(bottom, $fromColor, $toColor);
+  background-image: url($pattern),   linear-gradient(to top, $fromColor, $toColor);
 }
 
 // Typography ---------------- //

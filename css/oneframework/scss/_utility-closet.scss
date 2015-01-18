@@ -1,0 +1,34 @@
+/* Utility Closet
+========================================================================== */
+
+// Floats ---------------- //
+
+.clearfix {
+	@include clearfix;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-none {
+	float: none !important;
+}
+
+.centered-content-block {
+	@include centered-content-block;
+}
+
+// Peek-a-boo ---------------- //
+
+.show {
+	@include show;
+}
+
+.hidden {
+	@include hidden;
+}

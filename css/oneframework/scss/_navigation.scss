@@ -1,9 +1,8 @@
+/* Navigation
+========================================================================== */
 
-// Navigation ---------------- /
-
-nav {
+.primary-nav {
     height: $base-nav-height;
-    float: right;
 
     ul {
       margin: $nomargin;
@@ -13,17 +12,24 @@ nav {
 
       li {
         float: left;
-        position: relative;
+        @include rel-position(10);
 
         a {
           height: auto;
           margin: $nomargin;
-          padding: $base-horizontal-padding-large;
+          padding: 0px $base-horizontal-padding-large;
+          color: $primary-accent-color;
           font-family: $base-font;
+          font-weight: 700;
           text-decoration: none;
           line-height: $base-nav-line-height;
           display: block;
           @include uppercase;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: darken($primary-accent-color, 15%);
+          }
         }
       }
     }

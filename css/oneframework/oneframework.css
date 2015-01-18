@@ -194,6 +194,12 @@ a {
   a:hover, a:focus {
     color: #e97769; }
 
+hr {
+  background: #dddddd;
+  height: 1px;
+  margin: 50px 0px;
+  border: none; }
+
 /* Sizing Classes -------------*/
 /* Verticals  bvm = base-vertical-margin, bvp = base-vertical-padding (10px) */
 .bvm {
@@ -277,6 +283,35 @@ a {
   padding-left: 30px;
   padding-right: 30px; }
 
+/* Utility Closet
+========================================================================== */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.float-none {
+  float: none !important; }
+
+.centered-content-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.show {
+  display: block; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important; }
+
 /* Typography
 ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
@@ -341,10 +376,10 @@ strong {
   text-align: justify; }
 
 .lrg-text {
-  font-size: 23px; }
+  font-size: 20px; }
 
 .sm-text {
-  font-size: 14px; }
+  font-size: 10px; }
 
 /* Blockquotes
 ========================================================================== */
@@ -358,10 +393,42 @@ blockquote {
 blockquote cite {
   margin-top: 5px;
   color: #737373;
-  font-size: 14px;
+  font-size: 10px;
   display: block; }
   blockquote cite:before {
     content: "- "; }
+
+/* Navigation
+========================================================================== */
+.primary-nav {
+  height: 50px; }
+  .primary-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none; }
+    .primary-nav ul:before, .primary-nav ul:after {
+      content: " ";
+      display: table; }
+    .primary-nav ul:after {
+      clear: both; }
+    .primary-nav ul li {
+      float: left;
+      position: relative;
+      z-index: 10; }
+      .primary-nav ul li a {
+        height: auto;
+        margin: 0px;
+        padding: 0px 20px;
+        color: #e24f3d;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 50px;
+        display: block;
+        text-transform: uppercase;
+        transition: all 0.3s ease; }
+        .primary-nav ul li a:hover {
+          color: #b72c1b; }
 
 /* Button Styles
 ========================================================================== */
@@ -398,6 +465,7 @@ input.btn, button.btn {
   -webkit-appearance: none; }
 
 .btn-block {
+  width: 100%;
   display: block; }
 
 .btn-flat {

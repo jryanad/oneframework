@@ -87,7 +87,8 @@ input#{$base-btn-class}, button#{$base-btn-class} {
 
 // Block Button
 #{$base-btn-class}-block {
-    display: block;
+  width: 100%;
+  display: block;
 }
 
 // Flat Button Build

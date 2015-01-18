@@ -21,6 +21,13 @@ a {
 	}
 }
 
+hr {
+	background: $default-color;
+	height: 1px;
+	margin: ceil($base-vertical-padding-extra-large + 20) 0px;
+	border: none;
+}
+
 /* Sizing Classes -------------*/
 
 /* Verticals  bvm = base-vertical-margin, bvp = base-vertical-padding (10px) */

@@ -1,4 +1,26 @@
 
-h1 {
-	color: #ff0000;
+.banner.full-width {
+	background-color: #39424D;
+	background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+  padding: 100px 0;
 }
+
+.banner.full-width h1, .banner.full-width p {
+	color: #ffffff;
+}
+
+.banner.full-width h1 {
+	font-size: 54px;
+	text-transform: uppercase;
+}
+
+pre {
+	background-color: #39424D;
+	margin-top: 20px;
+	padding: 30px 10px;
+	color: #fff;
+	display: block;
+	word-break: normal;
+	white-space: nowrap;
+}
+

@@ -3,6 +3,8 @@
 
 // Site Branding Colors ------------------- //
 
+$default-color:          #dddddd;
+
 $primary-accent-color:   #e24f3d;
 $secondary-accent-color: #73c6de;
 $tertiary-accent-color:  #666666;
@@ -10,11 +12,11 @@ $tertiary-accent-color:  #666666;
 
 // Base Colors ------------------- //
 
-$black:     #000000 !default;
-$grey:      #333333 !default;
-$lightgrey: #999999 !default;
-$darkgrey:  #222222 !default;
-$white:     #ffffff !default;
+$black:     #000 !default;
+$grey:      #333 !default;
+$lightgrey: #999 !default;
+$darkgrey:  #222 !default;
+$white:     #fff !default;
 
 // Base Typography -------------- //
 
@@ -44,8 +46,8 @@ $base-title-font-weight:    500 !default;
 $base-title-line-height:    1.1 !default;
 $base-title-color:          inherit !default;
 
-$lrg-text: ceil($base-font-size * 1.38) !default;
-$sm-text:  ceil($base-font-size * 0.85) !default;
+$lrg-text: ceil($base-font-size * 1.2) !default;
+$sm-text:  floor($base-font-size * 0.65) !default;
 
 
 // Spacing --------------------- //
@@ -90,13 +92,21 @@ $base-horizontal-padding-extra-large: ceil($base-horizontal-padding * 3); // 30p
 
 // Navigation --------------------- //
 
+$base-nav-class:  ".primary-nav";
 $base-nav-height: 50px;
-$base-nav-line-height: $base-nav-height;
+
+$base-nav-bg-color: 				$primary-accent-color;
+$base-nav-bg-hover-color: 	darken($primary-accent-color, 15%);
+$base-nav-bg-active-color: 	$base-nav-bg-hover-color;
+$base-nav-link-color:     	$white;
+$base-nav-line-height: 			$base-nav-height;
+
+$base-nav-dropdown-color: 	$primary-accent-color;
 
 // Buttons --------------------- //
 
 $base-btn-class: ".btn";
-$base-btn-color: #ddd !default;
+$base-btn-color: $default-color;
 $base-btn-height: 40px !default;
 
 $base-btn-font-color: #222 !default;
@@ -106,7 +116,7 @@ $base-btn-font-family: $base-font;
 
 // These are based on the sites accent colors, you can add/remove based on needs 
 // name -> pre-defined accent color -> font color
-$base-btn-accent-colors: ('primary' $primary-accent-color #FFFFFF) ('secondary' $secondary-accent-color #FFFFFF) ('tertiary' $tertiary-accent-color #FFFFFF);
+$base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $secondary-accent-color #fff) ('tertiary' $tertiary-accent-color #fff);
 
 $base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
 $base-btn-sizes: 'small' 'medium' 'large' 'jumbo';
