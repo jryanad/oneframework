@@ -1010,6 +1010,8 @@ h4.acc-trigger a.open .icon-openClose:before {
   content: "\f056" !important;
 }
 
+/* Simple Tabs
+========================================================================== */
 ul.tabs {
   margin: 0 0 -1px;
   padding: 0px;

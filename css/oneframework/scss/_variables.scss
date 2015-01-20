@@ -107,7 +107,7 @@ $base-nav-dropdown-color: 	$primary-accent-color;
 
 $base-btn-class:  ".btn";
 $base-btn-color:  $default-color;
-$base-btn-height: 40px !default;
+$base-btn-height: ceil($base-font-size * 2.5);
 
 $base-btn-font-color:  #222 !default;
 $base-btn-font-size: 	 $base-font-size;
