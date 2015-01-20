@@ -13,7 +13,7 @@ blockquote {
 blockquote cite {
 	margin-top: 5px;
 	color: lighten($base-font-color, 25%);
-	font-size: $sm-text;
+	font-size: ceil($sm-text + 2);
 	display: block;
 	&:before {
 		content: "- ";

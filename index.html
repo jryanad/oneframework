@@ -18,7 +18,7 @@
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
-    <header class="header-wrap bvp-xlrg">
+    <header class="header-wrap fixed-header">
       <div class="container">
         <div class="six columns">
           <div class="logo">
@@ -237,6 +237,70 @@
               </div>
             </pre>
           </article>
+
+          <hr />
+        </div><!--/.sixteen columns-->
+      </div><!--/.row-->
+
+      <div class="row">
+        <div class="eight columns">
+          <h4>Simple Accordion</h4>
+
+          <div class="accordion">
+            <h4 class="acc-trigger">
+              <a href="#">What Kind of pizza should I get?</a>
+            </h4>
+            <div class="acc-detail">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
+              </p>
+            </div>
+
+            <h4 class="acc-trigger">
+              <a href="#">What bourbon goes best with pizza?</a>
+            </h4>
+            <div class="acc-detail">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
+              </p>
+            </div>
+
+            <h4 class="acc-trigger">
+              <a href="#">Should I get sicilian or deep-dish?</a>
+            </h4>
+            <div class="acc-detail">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
+              </p>
+            </div>
+          </div>
+        </div><!--.eight columns-->
+
+        <div class="eight columns">
+          <h4>Simple Tabs</h4>
+
+          <div class="tab-wrapper">
+            <ul class="tabs">
+              <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
+              <li><a href="#simple">Beef</a></li>
+              <li><a href="#lightweight">Bacon</a></li>
+              <li><a href="#mobileFriendly">Pork</a></li>
+            </ul>
+             
+            <!-- Standard <ul> with class of "tabs-content" -->
+            <ul class="tabs-content">
+              <!-- Give ID that matches HREF of above anchors -->
+              <li class="active" id="simple">
+                Beef bacon ground round pastrami short ribs meatball doner fatback ball tip boudin biltong tail prosciutto pig alcatra. Picanha ball tip chicken brisket tongue ground round ham spare ribs meatloaf fatback bacon. Short loin sirloin cow beef ribs bacon picanha pig leberkas cupim ham. Turducken jerky pork chop pork loin. Ball tip doner leberkas chuck beef jowl landjaeger.
+              </li>
+              <li id="lightweight">
+                Jerky landjaeger jowl, corned beef shoulder cow prosciutto capicola turducken doner tongue. Turkey ball tip alcatra, tenderloin pastrami short ribs landjaeger beef bacon rump corned beef bresaola ham meatloaf boudin. Venison turkey doner drumstick. Chuck tail jowl meatball spare ribs. Tenderloin frankfurter spare ribs turkey shank capicola rump.
+              </li>
+              <li id="mobileFriendly">
+                Pig short loin ham cow. Bresaola turducken jowl pig flank filet mignon beef short loin. Strip steak biltong ball tip, sirloin pork belly shankle salami venison picanha beef ribs landjaeger turkey kevin. Venison fatback tri-tip swine. Tenderloin jerky pork belly porchetta drumstick. Cupim sirloin short loin, tri-tip tail cow shoulder ground round turkey fatback corned beef pork strip steak meatloaf.
+              </li>
+            </ul> 
+          </div>
         </div>
       </div>
     </section>
@@ -244,7 +308,8 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+    <script src="js/components/accordion.js"></script>
+    <script src="js/components/tabs.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
   </body>

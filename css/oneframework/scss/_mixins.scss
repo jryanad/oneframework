@@ -78,7 +78,7 @@
 
 // Border Radius ------------ //
 
-@mixin border-radius($radius) {
+@mixin border-radius($radius...) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
   background-clip: padding-box;  /* stops bg color from leaking outside the border: */
@@ -86,7 +86,7 @@
 
 // Single side border-radius
 
-@mixin border-top-radius($radius) {
+@mixin border-top-left-radius($radius) {
   -webkit-border-top-right-radius: $radius;
   border-top-right-radius: $radius;
   -webkit-border-top-left-radius: $radius;
@@ -94,7 +94,7 @@
   background-clip: padding-box;
 }
 
-@mixin border-right-radius($radius) {
+@mixin border-top-right-radius($radius) {
   -webkit-border-bottom-right-radius: $radius;
   border-bottom-right-radius: $radius;
   -webkit-border-top-right-radius: $radius;
@@ -102,7 +102,7 @@
   background-clip: padding-box;
 }
 
-@mixin border-bottom-radius($radius) {
+@mixin border-bottom-right-radius($radius) {
   -webkit-border-bottom-right-radius: $radius;
   border-bottom-right-radius: $radius;
   -webkit-border-bottom-left-radius: $radius;
@@ -110,7 +110,7 @@
   background-clip: padding-box;
 }
 
-@mixin border-left-radius($radius) {
+@mixin border-bottom-left-radius($radius) {
   -webkit-border-bottom-left-radius: $radius;
   border-bottom-left-radius: $radius;
   -webkit-border-top-left-radius: $radius;

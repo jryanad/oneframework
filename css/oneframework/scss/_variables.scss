@@ -14,7 +14,7 @@ $tertiary-accent-color:  #666666;
 
 $black:     #000 !default;
 $grey:      #333 !default;
-$lightgrey: #999 !default;
+$lightgrey: #f9f9f9 !default;
 $darkgrey:  #222 !default;
 $white:     #fff !default;
 
@@ -105,12 +105,12 @@ $base-nav-dropdown-color: 	$primary-accent-color;
 
 // Buttons --------------------- //
 
-$base-btn-class: ".btn";
-$base-btn-color: $default-color;
+$base-btn-class:  ".btn";
+$base-btn-color:  $default-color;
 $base-btn-height: 40px !default;
 
-$base-btn-font-color: #222 !default;
-$base-btn-font-size: $base-font-size;
+$base-btn-font-color:  #222 !default;
+$base-btn-font-size: 	 $base-font-size;
 $base-btn-font-weight: $base-font-weight;
 $base-btn-font-family: $base-font;
 
@@ -119,12 +119,16 @@ $base-btn-font-family: $base-font;
 $base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $secondary-accent-color #fff) ('tertiary' $tertiary-accent-color #fff);
 
 $base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
-$base-btn-sizes: 'small' 'medium' 'large' 'jumbo';
+$base-btn-sizes: 	'small' 'medium' 'large' 'jumbo';
 
+// Tabs --------------------- //
 
-
-
-
+$base-tab-class: 				 ".tabs";
+$base-tabs-color: 			 $primary-accent-color;
+$base-tabs-active-color: darken($base-tabs-color, 5%);
+$base-tabs-font-size:		 $base-font-size;
+$base-tabs-font-color: 	 $white;
+$base-tabs-height: 			 ceil($base-font-size * 2.2);
 
 
 

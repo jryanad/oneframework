@@ -2,7 +2,6 @@
 ========================================================================== */
 
 .primary-nav {
-    height: $base-nav-height;
 
     ul {
       margin: $nomargin;
@@ -22,7 +21,6 @@
           font-family: $base-font;
           font-weight: 700;
           text-decoration: none;
-          line-height: $base-nav-line-height;
           display: block;
           @include uppercase;
           transition: all 0.3s ease;

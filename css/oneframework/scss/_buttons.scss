@@ -46,7 +46,7 @@ $base-btn-fs-jumbo:  inherit;
 	background: linear-gradient(top, lighten($base-btn-color, 5%), darken($base-btn-color, 5%));
 	background-color: $base-btn-color;
 	height: $base-btn-height;
-	margin: 0px;
+	margin: 0 0 5px;
 	padding: 0 ($base-btn-height * .6);
 	color: $base-btn-font-color;
 	font-family: $base-btn-font-family;
