@@ -43,7 +43,7 @@ $base-btn-fs-jumbo:  inherit;
 
 // Base Button Build
 #{$base-btn-class} {
-	background: linear-gradient(top, lighten($base-btn-color, 5%), darken($base-btn-color, 5%));
+	background-image: linear-gradient(top, lighten($base-btn-color, 5%), darken($base-btn-color, 5%));
 	background-color: $base-btn-color;
 	height: $base-btn-height;
 	margin: 0 0 5px;
@@ -63,13 +63,13 @@ $base-btn-fs-jumbo:  inherit;
 	}
 
 	&:hover, &:focus {
-		background: linear-gradient(top, lighten($base-btn-color, 10%), darken($base-btn-color, 7%));
+		background-image: linear-gradient(top, lighten($base-btn-color, 10%), darken($base-btn-color, 7%));
 		background-color: darken($base-btn-color, 5%);
 		color:  $base-btn-font-color;
 	}
 
 	&:active, &.is-active, &.active {
-		background: darken($base-btn-color, 15%);
+		background-color: darken($base-btn-color, 15%);
 		color: $base-btn-font-color;
 	}
 
@@ -96,19 +96,19 @@ input#{$base-btn-class}, button#{$base-btn-class} {
   #{$base-btn-class}-flat {
     $base-btn-accent-bg-color: $base-btn-color;
     $base-btn-accent-font-color: $base-btn-font-color;
-    background: $base-btn-accent-bg-color;
+    background-color: $base-btn-accent-bg-color;
     border: none;
     box-shadow: none;
     transition: all 0.3s ease;
 
     &:hover, &:focus {
-      background: darken($base-btn-accent-bg-color, 5%);
+      background-color: darken($base-btn-accent-bg-color, 5%);
       color: $base-btn-accent-font-color;
       box-shadow: none;
     }
 
     &:active, &.is-active, &.active {
-      background: darken($base-btn-accent-bg-color, 15%);
+      background-color: darken($base-btn-accent-bg-color, 15%);
       color: $base-btn-accent-font-color;
       box-shadow: none;
     }
@@ -132,13 +132,13 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     border: 2px solid $base-btn-accent-bg-color;
 
     &:hover, &:focus {
-      background: $base-btn-accent-bg-color;
+      background-color: $base-btn-accent-bg-color;
       box-shadow: none;
       border: 2px solid $base-btn-accent-bg-color;
     }
 
     &:active, &.is-active, &.active {
-      background: darken($base-btn-accent-bg-color, 15%);
+      background-color: darken($base-btn-accent-bg-color, 15%);
       box-shadow: none;
       border: 2px solid darken($base-btn-accent-bg-color, 15%);
     }
@@ -155,7 +155,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
   #{$base-btn-class}-3d {
     $base-btn-accent-bg-color: $base-btn-color;
     $base-btn-accent-font-color: $base-btn-font-color;
-    background: linear-gradient(top, lighten($base-btn-accent-bg-color, 2%), darken($base-btn-accent-bg-color, 2%));
+    background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 2%), darken($base-btn-accent-bg-color, 2%));
     background-color: $base-btn-accent-bg-color;
     color: $base-btn-accent-font-color;
     position: relative;
@@ -165,14 +165,14 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     border: 1px solid darken($base-btn-accent-bg-color, 5%);
 
     &:hover, &:focus {
-      background: linear-gradient(top, lighten($base-btn-accent-bg-color, 5%), darken($base-btn-accent-bg-color, 5%));
+      background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 5%), darken($base-btn-accent-bg-color, 5%));
       background-color: darken($base-btn-accent-bg-color, 5%);
       color: $base-btn-accent-font-color;
       box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
     }
 
     &:active, &.is-active, &.active {
-      background: linear-gradient(top, darken($base-btn-accent-bg-color, 2%), lighten($base-btn-accent-bg-color, 2%));
+      background-image: linear-gradient(top, darken($base-btn-accent-bg-color, 2%), lighten($base-btn-accent-bg-color, 2%));
       background-color: darken($base-btn-accent-bg-color, 15%);
       color: $base-btn-accent-font-color;
       top: 5px;
@@ -209,7 +209,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
 	$base-btn-accent-font-color: nth($base-btn-accent-color, 3);
 
 	#{$base-btn-class}-#{$base-btn-accent-name} {
-		background: linear-gradient(top, lighten($base-btn-accent-bg-color, 5%), darken($base-btn-accent-bg-color, 5%));
+		background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 5%), darken($base-btn-accent-bg-color, 5%));
 		background-color: $base-btn-accent-bg-color;
 		color: $base-btn-accent-font-color;
     box-shadow: 0px 1px 0px rgba(255, 255, 255, .5) inset, 0px 1px 2px rgba(0, 0, 0, .15);
@@ -217,13 +217,13 @@ input#{$base-btn-class}, button#{$base-btn-class} {
 
 
     &:hover, &:focus {
-      background: linear-gradient(top, lighten($base-btn-accent-bg-color, 10%), darken($base-btn-accent-bg-color, 5%));
+      background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 10%), darken($base-btn-accent-bg-color, 5%));
       background-color: darken($base-btn-accent-bg-color, 5%);
       color: $base-btn-accent-font-color;
     }
 
     &:active, &.is-active, &.active {
-      background: darken($base-btn-accent-bg-color, 15%);
+      background-color: darken($base-btn-accent-bg-color, 15%);
       color: $base-btn-accent-font-color;
     }
 	}
@@ -231,19 +231,19 @@ input#{$base-btn-class}, button#{$base-btn-class} {
 	@if $base-btn-flat-build {
     // .btn-flat-primary .btn-flat-secondary etc.
     #{$base-btn-class}-flat-#{$base-btn-accent-name} {
-      background: $base-btn-accent-bg-color;
+      background-color: $base-btn-accent-bg-color;
       color: $base-btn-accent-font-color;
       transition: all 0.3s ease;
       box-shadow: none;
       border: none;
 
       &:hover, &:focus {
-        background: darken($base-btn-accent-bg-color, 5%);
+        background-color: darken($base-btn-accent-bg-color, 5%);
         color: $base-btn-accent-font-color;
       }
 
       &:active, &.is-active, &.active {
-        background: darken($base-btn-accent-bg-color, 15%);
+        background-color: darken($base-btn-accent-bg-color, 15%);
         color: $base-btn-accent-font-color;
         box-shadow: none;
       }
@@ -265,14 +265,14 @@ input#{$base-btn-class}, button#{$base-btn-class} {
       border: 2px solid $base-btn-accent-bg-color;
       
       &:hover, &:focus {
-				background: $base-btn-accent-bg-color;
+				background-color: $base-btn-accent-bg-color;
 				color: $base-btn-accent-font-color;
 				box-shadow: none;
 				border: 2px solid $base-btn-accent-bg-color;
       }
 
       &:active, &.is-active, &.active {
-				background: darken($base-btn-accent-bg-color, 15%);
+				background-color: darken($base-btn-accent-bg-color, 15%);
 				color: $base-btn-accent-font-color;
 				box-shadow: none;
 				border: 2px solid darken($base-btn-accent-bg-color, 15%);
@@ -289,7 +289,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
   @if $base-btn-3d-build {
     // .btn-3d-primary .btn-3d-secondary etc.
     #{$base-btn-class}-3d-#{$base-btn-accent-name} {
-      background: linear-gradient(top, lighten($base-btn-accent-bg-color, 2%), darken($base-btn-accent-bg-color, 2%));
+      background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 2%), darken($base-btn-accent-bg-color, 2%));
       background-color: $base-btn-accent-bg-color;
       color: $base-btn-accent-font-color;
       position: relative;
@@ -299,14 +299,14 @@ input#{$base-btn-class}, button#{$base-btn-class} {
       border: 1px solid darken($base-btn-accent-bg-color, 10%);
 
       &:hover, &:focus {
-        background: linear-gradient(top, lighten($base-btn-accent-bg-color, 8%), darken($base-btn-accent-bg-color, 1%));
+        background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 8%), darken($base-btn-accent-bg-color, 1%));
         background-color: darken($base-btn-accent-bg-color, 5%);
         color: $base-btn-accent-font-color;
         box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 12%), 0px 8px 3px rgba(0, 0, 0, .30);
       }
 
       &:active, &.is-active, &.active {
-        background: linear-gradient(top,  darken($base-btn-accent-bg-color, 2%), lighten($base-btn-accent-bg-color, 2%));
+        background-image: linear-gradient(top,  darken($base-btn-accent-bg-color, 2%), lighten($base-btn-accent-bg-color, 2%));
         background-color: darken($base-btn-accent-bg-color, 5%);
         color: $base-btn-accent-font-color;
         top: 5px;
