@@ -17,14 +17,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 
 audio:not([controls]) { display: none; height: 0; }
-
-blockquote, q { quotes: none; }
-    
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
     
 table { border-collapse: collapse; border-spacing: 0; }
-
-img { width: 100%; height: auto; max-width: 100%; margin: 0px; padding: 0px; border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
 
 svg:not(:root) { overflow: hidden; }
 
@@ -51,26 +45,8 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 q { quotes: none; }
 q:before, q:after { content: ''; content: none; }
 
-small { font-size: 80%; }
-
-sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup { top: -8px; }
-sub { bottom: -4px; }
-
-figure { margin: 0; }
-
-.chromeframe {
-    margin: 3px 0;
-    background: #ccc;
-    color: #000;
-    padding: 3px 0;
-}
+blockquote { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
 /* Forms
 ========================================================================== */
