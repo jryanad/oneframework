@@ -121,14 +121,34 @@ $base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $se
 $base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
 $base-btn-sizes: 	'small' 'medium' 'large' 'jumbo';
 
+// Accordion --------------------- //
+
+$base-acc-trigger-color: 		 	$primary-accent-color;
+$base-acc-trigger-font-color: $white;
+$base-acc-trigger-font-size: 	ceil($base-font-size + 2);
+$base-acc-detail-bg-color:   	$lightgrey;
+$base-acc-detail-font-size:	 	$base-font-size;
+$base-acc-detail-font-color:	$base-font-color;
+
+
 // Tabs --------------------- //
 
-$base-tab-class: 				 ".tabs";
-$base-tabs-color: 			 $primary-accent-color;
-$base-tabs-active-color: darken($base-tabs-color, 5%);
-$base-tabs-font-size:		 $base-font-size;
-$base-tabs-font-color: 	 $white;
-$base-tabs-height: 			 ceil($base-font-size * 2.2);
+$base-tab-class: 				 		 		".tabs";
+$base-tabs-color: 			 		 		$primary-accent-color;
+$base-tabs-active-color: 		 		darken($base-tabs-color, 5%);
+$base-tabs-font-size:		 		 		$base-font-size;
+$base-tabs-font-color: 	 		 		$white;
+$base-tabs-height: 			 		 		ceil($base-font-size * 2.2);
+$base-tabs-content-bg-color: 		$lightgrey;
+$base-tabs-content-font-color: 	$base-font-color;
+
+// Tables --------------------- //
+
+$base-table-cell-padding: 					8px !default;
+$base-table-condensed-cell-padding: 5px !default;
+$base-table-bg-color: 							transparent !default;
+$base-table-bg-accent-color:				$lightgrey;
+$base-table-border-color: 					darken($lightgrey, 10%);
 
 
 

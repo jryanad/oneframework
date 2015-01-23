@@ -30,7 +30,7 @@
 @mixin centered-content-block () {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: table;
 }
 
 // Fixed Positioning ---------- //
@@ -123,13 +123,13 @@
 // Linear Gradient
 
 @mixin linear-gradient($fromColor, $toColor) {
-  background: $fromColor;
+  background-color: $fromColor;
   background-image: -webkit-linear-gradient(top, $fromColor, $toColor);
   background-image:         linear-gradient(to bottom, $fromColor, $toColor);
 }
 
 @mixin linear-gradient-inverse($fromColor, $toColor) {
-  background: $fromColor;
+  background-color: $fromColor;
   background-image: -webkit-linear-gradient(bottom, $fromColor, $toColor);
   background-image:         linear-gradient(to top, $fromColor, $toColor);
 }
@@ -137,14 +137,14 @@
 // Linear Pattern Gradient
 
 @mixin pattern-linear-gradient($pattern, $fromColor, $toColor) {
-  background: $fromColor;
+  background-color: $fromColor;
   background-image: url($pattern); /* Fallback */
   background-image: url($pattern),   -webkit-linear-gradient(top, $fromColor, $toColor);
   background-image: url($pattern),   linear-gradient(to bottom, $fromColor, $toColor);
 }
 
 @mixin pattern-linear-gradient-inverse($pattern, $fromColor, $toColor) {
-  background: $fromColor;
+  background-color: $fromColor;
   background-image: url($pattern); /* Fallback */
   background-image: url($pattern),   -webkit-linear-gradient(bottom, $fromColor, $toColor);
   background-image: url($pattern),   linear-gradient(to top, $fromColor, $toColor);

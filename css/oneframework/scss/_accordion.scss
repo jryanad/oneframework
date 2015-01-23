@@ -6,18 +6,18 @@
 }
 
 h4.acc-trigger a {
-  background-color: $primary-accent-color;
+  background-color: $base-acc-trigger-color;
   padding: 15px;
   display: block;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
+  color: $base-acc-trigger-font-color;
+  font-size: $base-acc-trigger-font-size;
+  font-weight: $base-font-weight;
   transition: all 0.3s ease;
 }
 
 h4.acc-trigger a.open,
 h4.acc-trigger a:hover {
-	background-color: darken($primary-accent-color, 5%);
+	background-color: darken($base-acc-trigger-color, 5%);
 }
 
 h4.acc-trigger a span { 
@@ -25,11 +25,13 @@ h4.acc-trigger a span {
 }
 
 .acc-detail {
-	background-color: $lightgrey;
-  color: #666;
-  font-size: 16px;
-  padding: 15px;
-  border: 1px solid darken($lightgrey, 10%);
+	background-color: $base-acc-detail-bg-color;
+  color: $base-tabs-content-font-color;
+  font-size: $base-acc-detail-font-size;
+  padding: 20px;
+  border-color: darken($base-tabs-content-bg-color, 10%);
+  border-style: solid;
+  border-width: 1px;
 }
 
 .icon-openClose:before {
