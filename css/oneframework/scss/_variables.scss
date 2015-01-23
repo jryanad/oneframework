@@ -41,7 +41,7 @@ $base-title-h4: ceil($base-font-size * 1.35) !default; // 22px
 $base-title-h5: ceil($base-font-size * 1.25) !default; // 20px
 $base-title-h6: ceil($base-font-size * 1.10) !default; // 18px
 
-$base-title-font:						$base-font !default;
+$base-title-font:           $base-font !default;
 $base-title-font-weight:    500 !default;
 $base-title-line-height:    1.1 !default;
 $base-title-color:          inherit !default;
@@ -60,11 +60,11 @@ $nopadding: 0px !default;
 $base-vertical-margin:  10px !default;
 $base-vertical-padding: 10px !default;
 
-$base-vertical-margin-small:					ceil($base-vertical-margin / 2); // 5px
-$base-vertical-padding-small:					ceil($base-vertical-padding / 2); // 5px
+$base-vertical-margin-small:          ceil($base-vertical-margin / 2); // 5px
+$base-vertical-padding-small:         ceil($base-vertical-padding / 2); // 5px
 
-$base-vertical-margin-medium:					ceil($base-vertical-margin + 5); // 15px
-$base-vertical-padding-medium:				ceil($base-vertical-padding + 5); // 15px
+$base-vertical-margin-medium:         ceil($base-vertical-margin + 5); // 15px
+$base-vertical-padding-medium:        ceil($base-vertical-padding + 5); // 15px
 
 $base-vertical-margin-large:  				ceil($base-vertical-margin * 2); // 20px
 $base-vertical-padding-large: 				ceil($base-vertical-padding * 2); // 20px
