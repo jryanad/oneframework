@@ -28,6 +28,16 @@ hr {
 	border: none;
 }
 
+img { 
+	width: 100%; 
+	max-width: 100%;
+	height: auto; 
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	-ms-interpolation-mode: bicubic; vertical-align: middle;
+}
+
 /* Sizing Classes -------------*/
 
 /* Verticals  bvm = base-vertical-margin, bvp = base-vertical-padding (10px) */
