@@ -66,25 +66,25 @@ $base-vertical-padding-small:         ceil($base-vertical-padding / 2); // 5px
 $base-vertical-margin-medium:         ceil($base-vertical-margin + 5); // 15px
 $base-vertical-padding-medium:        ceil($base-vertical-padding + 5); // 15px
 
-$base-vertical-margin-large:  				ceil($base-vertical-margin * 2); // 20px
-$base-vertical-padding-large: 				ceil($base-vertical-padding * 2); // 20px
+$base-vertical-margin-large:          ceil($base-vertical-margin * 2); // 20px
+$base-vertical-padding-large:         ceil($base-vertical-padding * 2); // 20px
 
-$base-vertical-margin-extra-large:  	ceil($base-vertical-margin * 3); // 30px
-$base-vertical-padding-extra-large: 	ceil($base-vertical-padding * 3); // 30px
+$base-vertical-margin-extra-large:    ceil($base-vertical-margin * 3); // 30px
+$base-vertical-padding-extra-large:   ceil($base-vertical-padding * 3); // 30px
 
 // Horizontal //
 
 $base-horizontal-margin:  10px !default;
 $base-horizontal-padding: 10px !default;
 
-$base-horizontal-margin-small:  			ceil($base-horizontal-margin / 2); // 5px
-$base-horizontal-padding-small: 			ceil($base-horizontal-padding / 2); // 5px
+$base-horizontal-margin-small:        ceil($base-horizontal-margin / 2); // 5px
+$base-horizontal-padding-small:       ceil($base-horizontal-padding / 2); // 5px
 
-$base-horizontal-margin-medium:  			ceil($base-horizontal-margin + 5); // 15px
-$base-horizontal-padding-medium: 			ceil($base-horizontal-padding + 5); // 15px
+$base-horizontal-margin-medium:       ceil($base-horizontal-margin + 5); // 15px
+$base-horizontal-padding-medium:      ceil($base-horizontal-padding + 5); // 15px
 
-$base-horizontal-margin-large:  			ceil($base-horizontal-margin * 2); // 20px
-$base-horizontal-padding-large: 			ceil($base-horizontal-padding * 2); // 20px
+$base-horizontal-margin-large:        ceil($base-horizontal-margin * 2); // 20px
+$base-horizontal-padding-large:       ceil($base-horizontal-padding * 2); // 20px
 
 $base-horizontal-margin-extra-large:  ceil($base-horizontal-margin * 3); // 30px
 $base-horizontal-padding-extra-large: ceil($base-horizontal-padding * 3); // 30px
@@ -95,13 +95,13 @@ $base-horizontal-padding-extra-large: ceil($base-horizontal-padding * 3); // 30p
 $base-nav-class:  ".primary-nav";
 $base-nav-height: 50px;
 
-$base-nav-bg-color: 				$primary-accent-color;
-$base-nav-bg-hover-color: 	darken($primary-accent-color, 15%);
-$base-nav-bg-active-color: 	$base-nav-bg-hover-color;
-$base-nav-link-color:     	$white;
-$base-nav-line-height: 			$base-nav-height;
+$base-nav-bg-color:         $primary-accent-color;
+$base-nav-bg-hover-color:   darken($primary-accent-color, 15%);
+$base-nav-bg-active-color:  $base-nav-bg-hover-color;
+$base-nav-link-color:       $white;
+$base-nav-line-height:      $base-nav-height;
 
-$base-nav-dropdown-color: 	$primary-accent-color;
+$base-nav-dropdown-color:   $primary-accent-color;
 
 // Buttons --------------------- //
 
@@ -110,7 +110,7 @@ $base-btn-color:  $default-color;
 $base-btn-height: ceil($base-font-size * 2.5);
 
 $base-btn-font-color:  #222 !default;
-$base-btn-font-size: 	 $base-font-size;
+$base-btn-font-size:   $base-font-size;
 $base-btn-font-weight: $base-font-weight;
 $base-btn-font-family: $base-font;
 
@@ -119,36 +119,36 @@ $base-btn-font-family: $base-font;
 $base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $secondary-accent-color #fff) ('tertiary' $tertiary-accent-color #fff);
 
 $base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
-$base-btn-sizes: 	'small' 'medium' 'large' 'jumbo';
+$base-btn-sizes:  'small' 'medium' 'large' 'jumbo';
 
 // Accordion --------------------- //
 
-$base-acc-trigger-color: 		 	$primary-accent-color;
+$base-acc-trigger-color:      $primary-accent-color;
 $base-acc-trigger-font-color: $white;
-$base-acc-trigger-font-size: 	ceil($base-font-size + 2);
-$base-acc-detail-bg-color:   	$lightgrey;
-$base-acc-detail-font-size:	 	$base-font-size;
-$base-acc-detail-font-color:	$base-font-color;
+$base-acc-trigger-font-size:  ceil($base-font-size + 2);
+$base-acc-detail-bg-color:    $lightgrey;
+$base-acc-detail-font-size:   $base-font-size;
+$base-acc-detail-font-color:  $base-font-color;
 
 
 // Tabs --------------------- //
 
-$base-tab-class: 				 		 		".tabs";
-$base-tabs-color: 			 		 		$primary-accent-color;
-$base-tabs-active-color: 		 		darken($base-tabs-color, 5%);
-$base-tabs-font-size:		 		 		$base-font-size;
-$base-tabs-font-color: 	 		 		$white;
-$base-tabs-height: 			 		 		ceil($base-font-size * 2.2);
-$base-tabs-content-bg-color: 		$lightgrey;
-$base-tabs-content-font-color: 	$base-font-color;
+$base-tab-class:                ".tabs";
+$base-tabs-color:               $primary-accent-color;
+$base-tabs-active-color:        darken($base-tabs-color, 5%);
+$base-tabs-font-size:           $base-font-size;
+$base-tabs-font-color:          $white;
+$base-tabs-height:              ceil($base-font-size * 2.2);
+$base-tabs-content-bg-color:    $lightgrey;
+$base-tabs-content-font-color:  $base-font-color;
 
 // Tables --------------------- //
 
-$base-table-cell-padding: 					8px !default;
+$base-table-cell-padding:           8px !default;
 $base-table-condensed-cell-padding: 5px !default;
-$base-table-bg-color: 							transparent !default;
-$base-table-bg-accent-color:				$lightgrey;
-$base-table-border-color: 					darken($lightgrey, 10%);
+$base-table-bg-color:               transparent !default;
+$base-table-bg-accent-color:        $lightgrey;
+$base-table-border-color:           darken($lightgrey, 10%);
 
 
 
