@@ -1,34 +1,31 @@
 /* Navigation
 ========================================================================== */
 
-.primary-nav {
+.primary-nav ul {
+  margin: $nomargin;
+  padding: $nopadding;
+  list-style-type: none;
+  @include clearfix;
 
-    ul {
+  li {
+    float: left;
+    @include rel-position(10);
+
+    a {
+      height: auto;
       margin: $nomargin;
-      padding: $nopadding;
-      list-style-type: none;
-      @include clearfix;
+      padding: 0px $base-horizontal-padding-large;
+      color: $primary-accent-color;
+      font-family: $base-font;
+      font-weight: 700;
+      text-decoration: none;
+      display: block;
+      @include uppercase;
+      transition: all 0.3s ease;
 
-      li {
-        float: left;
-        @include rel-position(10);
-
-        a {
-          height: auto;
-          margin: $nomargin;
-          padding: 0px $base-horizontal-padding-large;
-          color: $primary-accent-color;
-          font-family: $base-font;
-          font-weight: 700;
-          text-decoration: none;
-          display: block;
-          @include uppercase;
-          transition: all 0.3s ease;
-
-          &:hover {
-            color: darken($primary-accent-color, 15%);
-          }
-        }
+      &:hover {
+        color: darken($primary-accent-color, 15%);
       }
     }
   }
+}
