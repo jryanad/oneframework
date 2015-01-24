@@ -38,29 +38,9 @@ audio:not([controls]) {
   height: 0;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  margin: 0px;
-  padding: 0px;
-  border: 0;
-  -ms-interpolation-mode: bicubic;
-  vertical-align: middle;
 }
 
 svg:not(:root) {
@@ -109,34 +89,13 @@ q:before, q:after {
   content: none;
 }
 
-small {
-  font-size: 80%;
+blockquote {
+  quotes: none;
 }
 
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -8px;
-}
-
-sub {
-  bottom: -4px;
-}
-
-figure {
-  margin: 0;
-}
-
-.chromeframe {
-  margin: 3px 0;
-  background: #ccc;
-  color: #000;
-  padding: 3px 0;
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
 }
 
 /* Forms
@@ -239,6 +198,17 @@ hr {
   height: 1px;
   margin: 50px 0px;
   border: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
 }
 
 /* Sizing Classes -------------*/
