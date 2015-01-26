@@ -21,7 +21,7 @@
       text-decoration: none;
       display: block;
       @include uppercase;
-      transition: all 0.3s ease;
+      @include transition(all, 0.3s, ease);
 
       &:hover {
         color: darken($primary-accent-color, 15%);
