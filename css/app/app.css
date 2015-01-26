@@ -53,7 +53,7 @@ header .primary-nav {
 }
 
 header.sticky,
-.fixed-header.small-header .primary-nav {
+header.sticky .primary-nav {
 	height: 90px;
 }
 
