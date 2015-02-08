@@ -24,7 +24,7 @@
     .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
     .container .column,
     .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
-    .row                                        { margin-bottom: 20px; }
+    .row                                        { margin-bottom: 10px; }
 
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
@@ -80,6 +80,22 @@
         margin-right: 4%;
         margin-bottom: 20px;
         float: left;
+    }
+
+    /* Fix for Fractional Columns to Have No Bottom Margin When Used in Forms */
+
+    .inline-form .one-half,
+    .inline-form .one-third,
+    .inline-form .two-third,
+    .inline-form .three-fourth,
+    .inline-form .one-fourth,
+    .inline-form .one-fifth,
+    .inline-form .two-fifth,
+    .inline-form .three-fifth,
+    .inline-form .four-fifth,
+    .inline-form .one-sixth,
+    .inline-form .five-sixth {
+        margin-bottom: 0px !important;
     }
     
     .one-third, .two-third, .three-fourth, .one-fourth {

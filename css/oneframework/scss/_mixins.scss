@@ -62,20 +62,20 @@
   z-index: $z-index;
 }
 
-// Responsive Images --------- //
-
-@mixin img-responsive($display: block) {
-  max-width: 100%;
-  height: auto;
-  display: $display;
-}
-
 // Box Sizing --------------- //
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model;
      -moz-box-sizing: $box-model;
           box-sizing: $box-model;
+}
+
+// Borders ------------------ //
+
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
 }
 
 // Border Radius ------------ //

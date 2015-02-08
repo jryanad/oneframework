@@ -32,3 +32,42 @@
 .hidden {
 	@include hidden;
 }
+
+// Image Handling ---------------- //
+
+img { 
+	width: 100%; 
+	max-width: 100%;
+	height: auto; 
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	vertical-align: middle;
+	-ms-interpolation-mode: bicubic; 
+}
+
+img.non-responsive {
+	width: auto;
+	max-width: none;
+}
+
+// Video Embed Handling ---------------- //
+
+.video-wrapper {
+    height: 0px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 56%;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-wrapper iframe,
+.video-wrapper object,
+.video-wrapper embed {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

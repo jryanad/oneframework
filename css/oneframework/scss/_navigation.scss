@@ -1,7 +1,7 @@
 /* Navigation
 ========================================================================== */
 
-.primary-nav ul {
+nav#{$base-nav-class} ul {
   margin: $nomargin;
   padding: $nopadding;
   list-style-type: none;
@@ -14,8 +14,8 @@
     a {
       height: auto;
       margin: $nomargin;
-      padding: 0px $base-horizontal-padding-large;
-      color: $primary-accent-color;
+      padding: 0px ceil($base-horizontal-padding * 2);
+      color: $tertiary-accent-color;
       font-family: $base-font;
       font-weight: 700;
       text-decoration: none;
@@ -24,7 +24,7 @@
       @include transition(all, 0.3s, ease);
 
       &:hover {
-        color: darken($primary-accent-color, 15%);
+        color: darken($tertiary-accent-color, 15%);
       }
     }
   }

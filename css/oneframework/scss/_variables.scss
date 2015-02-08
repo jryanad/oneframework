@@ -60,34 +60,13 @@ $nopadding: 0px !default;
 $base-vertical-margin:  10px !default;
 $base-vertical-padding: 10px !default;
 
-$base-vertical-margin-small:          ceil($base-vertical-margin / 2); // 5px
-$base-vertical-padding-small:         ceil($base-vertical-padding / 2); // 5px
-
-$base-vertical-margin-medium:         ceil($base-vertical-margin + 5); // 15px
-$base-vertical-padding-medium:        ceil($base-vertical-padding + 5); // 15px
-
-$base-vertical-margin-large:          ceil($base-vertical-margin * 2); // 20px
-$base-vertical-padding-large:         ceil($base-vertical-padding * 2); // 20px
-
-$base-vertical-margin-extra-large:    ceil($base-vertical-margin * 3); // 30px
-$base-vertical-padding-extra-large:   ceil($base-vertical-padding * 3); // 30px
-
 // Horizontal //
 
 $base-horizontal-margin:  10px !default;
 $base-horizontal-padding: 10px !default;
 
-$base-horizontal-margin-small:        ceil($base-horizontal-margin / 2); // 5px
-$base-horizontal-padding-small:       ceil($base-horizontal-padding / 2); // 5px
+// Header --------------------- //
 
-$base-horizontal-margin-medium:       ceil($base-horizontal-margin + 5); // 15px
-$base-horizontal-padding-medium:      ceil($base-horizontal-padding + 5); // 15px
-
-$base-horizontal-margin-large:        ceil($base-horizontal-margin * 2); // 20px
-$base-horizontal-padding-large:       ceil($base-horizontal-padding * 2); // 20px
-
-$base-horizontal-margin-extra-large:  ceil($base-horizontal-margin * 3); // 30px
-$base-horizontal-padding-extra-large: ceil($base-horizontal-padding * 3); // 30px
 
 
 // Navigation --------------------- //
@@ -150,8 +129,10 @@ $base-table-bg-color:               transparent !default;
 $base-table-bg-accent-color:        $lightgrey;
 $base-table-border-color:           darken($lightgrey, 10%);
 
+// Forms --------------------- //
 
-
-
+$base-input-background-color: $white;
+$base-input-border-color:     $default-color;
+$base-input-focus-color:      #4bc9e6;
 
 

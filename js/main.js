@@ -4,9 +4,9 @@
 
 $(window).scroll(function() {
   if ($(this).scrollTop() > 1){  
-    $('header').addClass("sticky");
+    $('header').addClass("fixed-animated");
   }
   else{
-    $('header').removeClass("sticky");
+    $('header').removeClass("fixed-animated");
   }
 });

@@ -38,13 +38,6 @@ header {
   transition: height 0.3s;
 }
 
-header .primary-nav {
-	height: 160px;
-	-webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s;
-}
-
 .logo, .primary-nav li a {
 	line-height: 160px;
 	-webkit-transition: all 0.3s;
@@ -52,17 +45,16 @@ header .primary-nav {
   transition: all 0.3s;
 }
 
-header.sticky,
-header.sticky .primary-nav {
+header.fixed-animated {
 	height: 90px;
 }
 
-header.sticky .logo, 
-header.sticky .primary-nav li a {
+header.fixed-animated .logo, 
+header.fixed-animated .primary-nav li a {
 	line-height: 90px;
 }
 
-header + section{
+header + section {
 	margin-top: 160px;
 }
 
