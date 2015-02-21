@@ -11,33 +11,29 @@ fieldset {
 
 label {
 	display: inline-block;
-	max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
-	margin-bottom: 5px;
+	max-width: 100%;
+	margin-bottom: ceil($base-vertical-margin / 2);
 	font-weight: bold;
 }
 
+// Normalize Radio's and Checkboxes
+	input[type="radio"],
+	input[type="checkbox"] {
+	margin: 4px 0 0;
+	margin-top: 1px \9; // IE8-9
+	line-height: normal;
+}
 
-input[type="text"], 
-input[type="password"], 
-input[type="date"], 
-input[type="datetime"], 
-input[type="email"], 
-input[type="number"], 
-input[type="search"], 
-input[type="tel"], 
-input[type="time"], 
-input[type="url"], 
-textarea,
-select {
+.form-input {
 	background-color: $base-input-background-color;
 	width: 100%;
 	margin-bottom: ceil($base-vertical-margin / 2);
 	padding: ceil($base-vertical-padding - 2);
 	color: $base-font-color;
 	font-family: $base-font;
-	border-color: $base-input-border-color;
-	border-style: solid;
-	border-width: 1px;
+	line-height: $base-line-height;
+	display: block;
+	@include border(1px, solid, $base-input-border-color);
 	@include transition(border-color, 0.3s, ease);
 	
 	&:hover {
@@ -49,8 +45,40 @@ select {
 		box-shadow: 0 0 5px rgba($base-input-focus-color, 0.4);
 		outline: none;
 	}
+
+	@include placeholder;
 }
 
 textarea {
 	resize: vertical;
 }
+
+input[type="search"] {
+	-webkit-appearance: none;
+	@include box-sizing(border-box);
+}
+
+.radio-input,
+.checkbox-input {
+	position: relative;
+	display: block;
+	margin: $base-vertical-margin 0px;
+	
+	label {
+		min-height: $base-line-height-computed;
+		padding-left: 20px;
+		margin-bottom: 0;
+		font-weight: normal;
+		cursor: pointer;
+		display: block;
+	}
+}
+
+.radio-input input[type="radio"],
+.checkbox-input input[type="checkbox"] {
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 4px \9;
+}
+
+

@@ -2,8 +2,16 @@
 /* Stack
 ========================================================================== */
 
+/* Set box-sizing globally to handle padding and border widths */
+
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
 body {
-	background-color: $white;
+	background-color: $base-body-bg-color;
 	font-family: $base-font;
 	font-size: $base-font-size;
 	font-weight: $base-font-weight;

@@ -31,3 +31,4 @@ Thumbs.db
 *.tmproj
 /nbproject
 /nbproject/private/
+/node_modules

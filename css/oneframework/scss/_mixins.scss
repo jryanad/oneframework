@@ -154,29 +154,17 @@
 
 // Typography ---------------- //
 
-@mixin uppercase {
-  text-transform: uppercase;
-}
+@mixin uppercase { text-transform: uppercase; }
 
-@mixin lowercase {
-  text-transform: lowercase;
-}
+@mixin lowercase { text-transform: lowercase; }
 
-@mixin italic {
-  font-style: italic;
-}
+@mixin italic { font-style: italic; }
 
-@mixin no-decoration {
-  text-decoration: none;
-}
+@mixin no-decoration { text-decoration: none; }
 
-@mixin decoration {
-  text-decoration: underline;
-}
+@mixin decoration { text-decoration: underline; }
 
-@mixin outline {
-  outline: none;
-}
+@mixin outline { outline: none; }
 
 // CSS3 Transitions --------- //
 
@@ -186,5 +174,26 @@
     -ms-transition: $transition-property $transition-time $method;
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
+}
+
+// Placeholder text --------- //
+
+@mixin placeholder($color: $base-input-border-color) {
+    // Firefox
+    &::-moz-placeholder {
+    color: darken($color, 20%);
+    opacity: 1;
+  }
+  &:-ms-input-placeholder      { color: darken($color, 20%); } // Internet Explorer 10+
+  &::-webkit-input-placeholder { color: darken($color, 20%); } // Safari and Chrome
+}
+
+// Opacity --------- //
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
 }
 

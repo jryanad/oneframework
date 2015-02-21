@@ -3,20 +3,22 @@
 
 // Site Branding Colors ------------------- //
 
-$default-color:          #dddddd;
+$base-body-bg-color:      #ffffff;
 
-$primary-accent-color:   #e24f3d;
-$secondary-accent-color: #73c6de;
-$tertiary-accent-color:  #666666;
+$default-color:           #dddddd;
+
+$primary-accent-color:    #e24f3d;
+$secondary-accent-color:  #73c6de;
+$tertiary-accent-color:   #666666;
 
 
 // Base Colors ------------------- //
 
+$white:     #fff !default;
 $black:     #000 !default;
 $grey:      #333 !default;
 $lightgrey: #f9f9f9 !default;
 $darkgrey:  #222 !default;
-$white:     #fff !default;
 
 // Base Typography -------------- //
 
@@ -27,12 +29,8 @@ $base-font-color: $grey !default;
 $base-line-height:             1.428571429 !default; // 20/14
 $base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 20px
 
-$base-title-font: $base-font;
-$base-title-font-weight: 500;
-$base-title-color: $darkgrey !default;
-
 $base-link-color: $primary-accent-color !default;
-$base-link-hover-color: lighten($primary-accent-color, 10%) !default;
+$base-link-hover-color: lighten($primary-accent-color, 5%) !default;
 
 $base-title-h1: ceil($base-font-size * 2.25) !default; // 36px
 $base-title-h2: ceil($base-font-size * 1.85) !default; // 30px
@@ -44,7 +42,7 @@ $base-title-h6: ceil($base-font-size * 1.10) !default; // 18px
 $base-title-font:           $base-font !default;
 $base-title-font-weight:    500 !default;
 $base-title-line-height:    1.1 !default;
-$base-title-color:          inherit !default;
+$base-title-color:          darken($base-font-color, 10%) !default;
 
 $lrg-text: ceil($base-font-size * 1.2) !default;
 $sm-text:  floor($base-font-size * 0.65) !default;

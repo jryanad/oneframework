@@ -359,26 +359,26 @@
             </p>
 
             <form>
-              <div class="row inline-form">
+              <div class="row">
                 <div class="one-half">
                   <label for="firstname">First Name</label>
-                  <input type="text" placeholder="Enter Your First Name" />
+                  <input class="form-input" type="text" placeholder="Enter Your First Name" />
                 </div>
 
                 <div class="one-half last">
                   <label for="lastname">Last Name</label>
-                  <input type="text" placeholder="Enter Your Last Name" />
+                  <input class="form-input" type="text" placeholder="Enter Your Last Name" />
                 </div>
               </div>
 
               <div class="row">
                 <label for="email">Email</label>
-                <input type="text" placeholder="Enter Your Email Address" />
+                <input class="form-input" type="text" placeholder="Enter Your Email Address" />
               </div>
 
               <div class="row">
                 <label for="states">Select Your State</label>
-                <select>
+                <select class="form-input">
                   <option>Select a State</option>
                   <option>Alabama</option>
                   <option>Alaska</option>
@@ -433,10 +433,71 @@
                   <option>Wyoming</option>
                 </select>
               </div>
+              
+              <div class="row radio-input">
+                <p>
+                  <strong>Radio Input Types</strong>
+                </p>
+
+                <div class="one-half">
+                  <label>
+                    <input type="radio" name="options" value="option1" />
+                    Make Sure that you selected something!
+                  </label>
+                  
+                  <label>
+                    <input type="radio" name="options" value="option3" />
+                    You can only make one decision.
+                  </label>
+                  
+                  <label>
+                    <input type="radio" name="options" value="option5" />
+                    It has to be one of these options.
+                  </label>
+                </div>
+
+                <div class="one-half last">
+                  <label>
+                    <input type="radio" name="options" value="option2" />
+                    So Many Options!
+                  </label>
+                  
+                  <label>
+                    <input type="radio" name="options" value="option4" />
+                    Pick One, Don't be hasty!
+                  </label>
+                  
+                  <label>
+                    <input type="radio" name="options" value="option6" />
+                    What if this was the one?
+                  </label>
+                </div>
+              </div>
+              
+              <div class="row checkbox-input">
+                <p>
+                  <strong>Checkbox Input Types</strong>
+                </p>
+
+                <label>
+                  <input type="checkbox" checked="" value="option1" />
+                  Option 1
+                </label>
+          
+                <label>
+                  <input type="checkbox" value="option2" />
+                  Option 2
+                </label>
+              
+                <label>
+                  <input type="checkbox" value="option3" />
+                  Option 3
+                </label>
+              </div>
 
               <div class="row">
                 <label for="comments">Comments</label>
-                <textarea placeholder="Enter Your Comments"></textarea>
+                <textarea class="form-input" placeholder="Enter Your Comments"></textarea>
               </div>
 
               <button class="btn btn-flat-primary" type="submit">Submit</button>

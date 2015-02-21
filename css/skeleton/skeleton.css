@@ -30,10 +30,6 @@
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
 
-    /* Pull Classes */
-    .pull-left                                  { float: left; }
-    .pull-right                                 { float: right; }
-
     /* Base Grid */
     .container .one.column,
     .container .one.columns                     { width: 40px;  }
@@ -76,26 +72,9 @@
     .four-fifth,
     .one-sixth,
     .five-sixth {
-        position: relative;
-        margin-right: 4%;
-        margin-bottom: 20px;
-        float: left;
-    }
-
-    /* Fix for Fractional Columns to Have No Bottom Margin When Used in Forms */
-
-    .inline-form .one-half,
-    .inline-form .one-third,
-    .inline-form .two-third,
-    .inline-form .three-fourth,
-    .inline-form .one-fourth,
-    .inline-form .one-fifth,
-    .inline-form .two-fifth,
-    .inline-form .three-fifth,
-    .inline-form .four-fifth,
-    .inline-form .one-sixth,
-    .inline-form .five-sixth {
-        margin-bottom: 0px !important;
+      position: relative;
+      margin-right: 4%;
+      float: left;
     }
     
     .one-third, .two-third, .three-fourth, .one-fourth {

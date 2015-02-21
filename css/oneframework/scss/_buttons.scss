@@ -65,7 +65,7 @@ $base-btn-fs-jumbo:  inherit;
 	&:hover, &:focus {
 		background-image: linear-gradient(top, lighten($base-btn-color, 10%), darken($base-btn-color, 7%));
 		background-color: darken($base-btn-color, 5%);
-		color:  $base-btn-font-color;
+		color: $base-btn-font-color;
 	}
 
 	&:active, &.is-active, &.active {
@@ -99,7 +99,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     background-color: $base-btn-accent-bg-color;
     border: none;
     box-shadow: none;
-    transition: all 0.3s ease;
+    @include transition(all, 0.3s, ease);
 
     &:hover, &:focus {
       background-color: darken($base-btn-accent-bg-color, 5%);
@@ -128,7 +128,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     background: none;
     color: $base-btn-accent-font-color;
     box-shadow: none;
-    transition: all 0.3s ease;
+    @include transition(all, 0.3s, ease);
     border: 2px solid $base-btn-accent-bg-color;
 
     &:hover, &:focus {
@@ -160,7 +160,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     color: $base-btn-accent-font-color;
     position: relative;
     top: 0px;
-    transition: all 0.3s ease;
+    @include transition(all, 0.3s, ease);
     box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 20%), 0px 8px 3px rgba(0, 0, 0, .2);
     border: 1px solid darken($base-btn-accent-bg-color, 5%);
 
@@ -233,7 +233,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     #{$base-btn-class}-flat-#{$base-btn-accent-name} {
       background-color: $base-btn-accent-bg-color;
       color: $base-btn-accent-font-color;
-      transition: all 0.3s ease;
+      @include transition(all, 0.3s, ease);
       box-shadow: none;
       border: none;
 
@@ -260,7 +260,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     #{$base-btn-class}-border-#{$base-btn-accent-name} {
     	background: none;
       color: $base-btn-accent-bg-color;
-      transition: all 0.3s ease;
+      @include transition(all, 0.3s, ease);
       box-shadow: none;
       border: 2px solid $base-btn-accent-bg-color;
       
@@ -294,7 +294,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
       color: $base-btn-accent-font-color;
       position: relative;
       top: 0px;
-      transition: all 0.3s ease;
+      @include transition(all, 0.3s, ease);
       box-shadow: 0px 1px 0px rgba(255, 255, 255, .3) inset, 0px -1px 1px rgba(255, 255, 255, .15) inset, 0px 7px 0px darken($base-btn-accent-bg-color, 10%), 0px 8px 3px rgba(0, 0, 0, .30);
       border: 1px solid darken($base-btn-accent-bg-color, 10%);
 

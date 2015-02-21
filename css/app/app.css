@@ -55,7 +55,7 @@ header.fixed-animated .primary-nav li a {
 }
 
 header + section {
-	margin-top: 160px;
+	margin-top: 160px; /* Has to match the header line-height */
 }
 
 .footer-wrap {
