@@ -11,7 +11,8 @@ module.exports = function(grunt) {
 	        sourcemap: 'none'
 	      },
 	      files: {
-	        'css/oneframework/oneframework.css': 'css/oneframework/scss/oneframework.scss'
+	        'css/oneframework/oneframework.css': 'css/oneframework/scss/oneframework.scss',
+	        'css/skeleton/skeleton.css': 'css/skeleton/skeleton.scss'
 	      }
 	    }
 	  },
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
 				livereload: true
 			},
 			sass: {
-				files: ['css/oneframework/scss/**/*.scss'],
+				files: ['css/oneframework/scss/**/*.scss', 'css/skeleton/**/*.scss'],
 				tasks: ['sass','cssmin']
 			}
 	  },

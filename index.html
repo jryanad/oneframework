@@ -20,33 +20,37 @@
   <body>
     <header class="header-wrap">
       <div class="container">
-        <div class="six columns">
-          <div class="logo">
-            <img src="images/one-framework-logo.png" title="one framework" />
+        <div class="row">
+          <div class="four columns">
+            <div class="logo">
+              <img src="images/one-framework-logo.png" title="one framework" />
+            </div>
           </div>
-        </div>
-        
-        <div class="ten columns">
-          <nav class="primary-nav float-right">
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Docs</a></li>
-              <li><a href="#">Extras</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+          
+          <div class="eight columns">
+            <nav class="primary-nav float-right">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Extras</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
 
     <section class="banner full-width centered">
       <div class="container">
-        <div class="sixteen columns">
-          <div class="intro">
-            <h1>Welcome to ONE</h1>
-            <p>
-              This is a framework dedicated to simplicity. Looking for something more? Go somehwere else.
-            </p>
+        <div class="row">
+          <div class="twelve columns">
+            <div class="intro">
+              <h1>Welcome to ONE</h1>
+              <p>
+                This is a framework dedicated to simplicity. Looking for something more? Go somehwere else.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -54,7 +58,7 @@
 
     <section class="container">
       <div class="row">
-        <div class="sixteen columns bvp-xlrg">
+        <div class="twelve columns bvp-xlrg">
           <h1>This is a h1 heading</h1>
           <h2>This is a h2 heading</h2>
           <h3>This is a h3 heading</h3>
@@ -241,11 +245,11 @@
           </article>
 
           <hr />
-        </div><!--/.sixteen columns-->
+        </div><!--/.twelve columns-->
       </div><!--/.row-->
 
       <div class="row">
-        <div class="eight columns">
+        <div class="six columns">
           <h4>Simple Accordion</h4>
 
           <div class="accordion">
@@ -276,9 +280,9 @@
               </p>
             </div>
           </div>
-        </div><!--.eight columns-->
+        </div><!--.six columns-->
 
-        <div class="eight columns">
+        <div class="six columns">
           <h4>Simple Tabs</h4>
 
           <div class="tab-wrapper">
@@ -309,7 +313,7 @@
       <hr />
 
       <div class="row">
-        <div class="sixteen columns">
+        <div class="twelve columns">
           <h4>Tables</h4>
 
           <div class="table-wrap responsive-table">
@@ -350,7 +354,7 @@
       <hr />
 
       <div class="row">
-        <div class="sixteen columns">
+        <div class="twelve columns">
           <h4>Forms &amp; Form Inputs</h4>
 
           <fieldset>
@@ -360,12 +364,12 @@
 
             <form>
               <div class="row">
-                <div class="one-half">
+                <div class="one-half column">
                   <label for="firstname">First Name</label>
                   <input class="form-input" type="text" placeholder="Enter Your First Name" />
                 </div>
 
-                <div class="one-half last">
+                <div class="one-half column">
                   <label for="lastname">Last Name</label>
                   <input class="form-input" type="text" placeholder="Enter Your Last Name" />
                 </div>
@@ -438,39 +442,41 @@
                 <p>
                   <strong>Radio Input Types</strong>
                 </p>
+                
+                <div class="row">
+                  <div class="one-half column">
+                    <label>
+                      <input type="radio" name="options" value="option1" />
+                      Make Sure that you selected something!
+                    </label>
+                    
+                    <label>
+                      <input type="radio" name="options" value="option3" />
+                      You can only make one decision.
+                    </label>
+                    
+                    <label>
+                      <input type="radio" name="options" value="option5" />
+                      It has to be one of these options.
+                    </label>
+                  </div>
 
-                <div class="one-half">
-                  <label>
-                    <input type="radio" name="options" value="option1" />
-                    Make Sure that you selected something!
-                  </label>
-                  
-                  <label>
-                    <input type="radio" name="options" value="option3" />
-                    You can only make one decision.
-                  </label>
-                  
-                  <label>
-                    <input type="radio" name="options" value="option5" />
-                    It has to be one of these options.
-                  </label>
-                </div>
-
-                <div class="one-half last">
-                  <label>
-                    <input type="radio" name="options" value="option2" />
-                    So Many Options!
-                  </label>
-                  
-                  <label>
-                    <input type="radio" name="options" value="option4" />
-                    Pick One, Don't be hasty!
-                  </label>
-                  
-                  <label>
-                    <input type="radio" name="options" value="option6" />
-                    What if this was the one?
-                  </label>
+                  <div class="one-half column">
+                    <label>
+                      <input type="radio" name="options" value="option2" />
+                      So Many Options!
+                    </label>
+                    
+                    <label>
+                      <input type="radio" name="options" value="option4" />
+                      Pick One, Don't be hasty!
+                    </label>
+                    
+                    <label>
+                      <input type="radio" name="options" value="option6" />
+                      What if this was the one?
+                    </label>
+                  </div>
                 </div>
               </div>
               
@@ -509,9 +515,11 @@
 
     <footer class="footer-wrap">
       <div class="container">
-        <div class="sixteen columns">
-          <div class="footer-meta text-centered">
-            Designed by and for the dudes @ AudiologyDesign. Copyright 2015 | All Rights Reserved..... so don't even try it.
+        <div class="row">
+          <div class="twelve columns">
+            <div class="footer-meta text-centered">
+              Designed by and for the dudes @ AudiologyDesign. Copyright 2015 | All Rights Reserved..... so don't even try it.
+            </div>
           </div>
         </div>
       </div>
