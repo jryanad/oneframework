@@ -148,6 +148,14 @@ $column-margin: 4% !default; // space between columns
   .offset-by-one-half.column    { margin-left: grid-offset-length(6);  }
 }
 
+// Form Stuffs
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+form > .row,
+.row + .row {
+  margin-bottom: 10px;
+}
+
 // Clearing
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 

@@ -220,6 +220,11 @@
     margin-left: 52%;
   }
 }
+form > .row,
+.row + .row {
+  margin-bottom: 10px;
+}
+
 .container:after,
 .row:after {
   content: "";

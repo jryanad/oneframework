@@ -32,9 +32,6 @@ header {
 	padding: 40px 0;
 }
 
-header + section {
-	/* margin-top: 160px; /* Has to match the header line-height */
-}
 
 @media only screen and (max-width: 1023px) {
 	.primary-nav { display: none; }
@@ -59,16 +56,7 @@ header + section {
 
 article { margin: 20px 0 80px; }
 
-.i-wrap {
-	
-}
-
 .btn { text-transform: capitalize; }
-
-form > .row,
-.row + .row {
-	margin-bottom: 10px;
-}
 
 .boxxy {
 	background-color: #ffffff;
