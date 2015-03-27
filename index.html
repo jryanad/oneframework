@@ -12,546 +12,605 @@
 
     <link rel="stylesheet" href="css/skeleton/skeleton.css" />
     <link rel="stylesheet" href="css/oneframework/oneframework.min.css" />
-    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/app/app.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.css" />
     
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    
   </head>
   <body>
-    <header class="header-wrap">
-      <div class="container">
-        <div class="row">
-          <div class="four columns">
-            <div class="logo">
-              <img src="images/one-framework-logo.png" title="one framework" />
-            </div>
-          </div>
-          
-          <div class="eight columns">
-            <nav class="primary-nav float-right">
+    <div class="page-wrapper">
+      <div class="responsive-navbar FixedTop clearfix">
+       <a id="hamburger" href="#responsive-menu"><span></span></a>
+      </div>
+      <div class="menu-wrapper">
+        <nav id="responsive-menu">
+           <ul>
+            <li><a href="#">Menu 1</a>
               <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Extras</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+                <li><a href="#">Submenu 3</a></li>
+                <li><a href="#">Submenu 4</a></li>
               </ul>
-            </nav>
-          </div>
-        </div>
+            </li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a>
+              <ul>
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+                <li><a href="#">Submenu 3</a></li>
+                <li><a href="#">Submenu 4</a>
+                  <ul>
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                    <li><a href="#">Submenu 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Submenu 5</a></li>
+                <li><a href="#">Submenu 6</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Menu 4</a></li>
+            <li><a href="#">Menu 5</a></li>
+            <li><a href="#">Menu 6</a></li>
+            <li><a href="#">Menu 7</a></li>
+            <li><a href="#">Menu 8</a></li>
+            <li><a href="#">Menu 9</a></li>
+            <li><a href="#">Menu 10</a></li>
+            <li><a href="#">Menu 11</a></li>
+           </ul>
+        </nav>
       </div>
-    </header>
-
-    <section class="banner full-width centered">
-      <div class="container">
-        <div class="row">
-          <div class="twelve columns">
-            <div class="intro">
-              <h1>Welcome to ONE</h1>
-              <p>
-                This is a framework dedicated to simplicity. Looking for something more? Go somehwere else.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="typography" class="container bvp-xlrg">
-      <article class="row">
-        <div class="twelve columns">
-          <h1>This is a h1 heading</h1>
-          <h2>This is a h2 heading</h2>
-          <h3>This is a h3 heading</h3>
-          <h4>This is a h4 heading</h4>
-          <h5>This is a h5 heading</h5>
-          <h6>This is a h6 heading</h6>
-        </div>
-      </article>
-          
-      <hr />
-          
-      <article class="row">
-        <div class="twelve columns">
-          <h3>This is a text block with a link</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Donec scelerisque neque quam;</a> et accumsan augue egestas quis. Mauris id lacinia lacus, nec lobortis nisi. In vel neque sit amet massa faucibus dictum. Pellentesque egestas tortor sed consectetur semper. Aenean et lectus mi. Nullam velit ipsum, dapibus in nunc ac, hendrerit consectetur tortor? Curabitur auctor, ipsum sit amet vehicula scelerisque, mauris nibh facilisis neque, vitae cursus metus purus vel ante. In blandit felis sem; id porta leo placerat at. Cras dignissim in sem in porttitor. Praesent elementum mi non justo condimentum ultrices. Curabitur ac luctus dui, in placerat velit.
-          </p>
-        </div>
-      </article>
-
-      <hr />
-
-      <article class="row">
-        <div class="twelve columns">
-          <h3>This is a blockquote</h3>
-
-          <blockquote>
-            To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.
-            <cite>Ralph Waldo Emerson</cite>
-          </blockquote>
-        </div>
-      </article>
-    </section><!--/#typography-->
-
-    <section id="buttons" class="container bvp-xlrg">
-      <article class="row">
-        <div class="twelve columns">
-          <h1>Button Examples</h3>
-        </div>
-      </article>
-
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Default Buttons</h4>
-          <p>
-            <a class="btn" href="#">default button</a>
-            <a class="btn btn-primary" href="#">primary button</a>
-            <a class="btn btn-secondary" href="#">secondary button</a>
-            <a class="btn btn-tertiary" href="#">tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-      
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Flat Square Buttons</h4>
-          <p>
-            <a class="btn btn-flat" href="#">default button</a>
-            <a class="btn btn-flat-primary" href="#">primary button</a>
-            <a class="btn btn-flat-secondary" href="#">secondary button</a>
-            <a class="btn btn-flat-tertiary" href="#">tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Flat Rounded Buttons</h4>
-          <p>
-            <a class="btn btn-rounded btn-flat" href="#">default button</a>
-            <a class="btn btn-rounded btn-flat-primary" href="#">primary button</a>
-            <a class="btn btn-rounded btn-flat-secondary" href="#">secondary button</a>
-            <a class="btn btn-rounded btn-flat-tertiary" href="#">tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-rounded btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-      
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Flat Pill Buttons</h4>
-          <p>
-            <a class="btn btn-pill btn-flat" href="#">default button</a>
-            <a class="btn btn-pill btn-flat-primary" href="#">primary button</a>
-            <a class="btn btn-pill btn-flat-secondary" href="#">secondary button</a>
-            <a class="btn btn-pill btn-flat-tertiary" href="#">tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-pill btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-      
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Border Buttons</h4>
-          <p>
-            <a class="btn btn-border" href="#">default button</a>
-            <a class="btn btn-border-primary" href="#">primary button</a>
-            <a class="btn btn-border-secondary" href="#">secondary button</a>
-            <a class="btn btn-border-tertiary" href="#">tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-border-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-
-      <article class="row">
-        <div class="twelve columns">
-          <h4>3D Buttons</h4>
-          <p>
-            <a class="btn btn-3d" href="#">default button</a>
-            <a class="btn btn-3d-primary" href="#">primary button</a>
-            <a class="btn btn-3d-secondary" href="#">secondary button</a>
-            <a class="btn btn-3d-tertiary" href="#">tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-3d-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Icon Buttons</h4>
-          <p>
-            <a class="btn btn-flat" href="#"><i class="fa fa-github"></i> default button</a>
-            <a class="btn btn-flat-primary" href="#"><i class="fa fa-code"></i> primary button</a>
-            <a class="btn btn-flat-secondary" href="#"><i class="fa fa-envelope"></i> secondary button</a>
-            <a class="btn btn-flat-tertiary" href="#"><i class="fa fa-camera"></i> tertiary button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-flat-primary"</span>&gt;&lt;i class=<span class="string">"fa fa-camera"</span>&gt; Example Button&lt;/i&gt;&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-
-      <hr />
-
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Button Sizes</h4>
-          <p>
-            <a class="btn btn-flat btn-jumbo" href="#">jumbo button</a>
-            <a class="btn btn-flat btn-large" href="#">large button</a>
-            <a class="btn btn-flat btn-medium" href="#">medium button</a>
-            <a class="btn btn-flat btn-small" href="#">small button</a>
-          </p>
-
-          <pre>
-            <div class="code-wrap">
-              <span>
-                <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-jumbo btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
-              </span>
-            </div>
-          </pre>
-        </div>
-      </article>
-    </section><!--/#buttons-->
-    
-    <section id="components" class="container bvp-xlrg">
-      <article class="row">
-        <div class="six columns">
-          <h4>Simple Accordion</h4>
-
-          <div class="accordion">
-            <h4 class="acc-trigger">
-              <a href="#">What Kind of pizza should I get?</a>
-            </h4>
-            <div class="acc-detail">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
-              </p>
-            </div>
-
-            <h4 class="acc-trigger">
-              <a href="#">What bourbon goes best with pizza?</a>
-            </h4>
-            <div class="acc-detail">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
-              </p>
-            </div>
-
-            <h4 class="acc-trigger">
-              <a href="#">Should I get sicilian or deep-dish?</a>
-            </h4>
-            <div class="acc-detail">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
-              </p>
-            </div>
-          </div>
-        </div><!--.six columns-->
-
-        <div class="six columns">
-          <h4>Simple Tabs</h4>
-
-          <div class="tab-wrapper">
-            <ul class="tabs">
-              <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
-              <li><a href="#beef">Beef</a></li>
-              <li><a href="#bacon">Bacon</a></li>
-              <li><a href="#pork">Pork</a></li>
-            </ul>
-             
-            <!-- Standard <ul> with class of "tabs-content" -->
-            <ul class="tabs-content">
-              <!-- Give ID that matches HREF of above anchors -->
-              <li class="active" id="beef">
-                Beef bacon ground round pastrami short ribs meatball doner fatback ball tip boudin biltong tail prosciutto pig alcatra. Picanha ball tip chicken brisket tongue ground round ham spare ribs meatloaf fatback bacon. Short loin sirloin cow beef ribs bacon picanha pig leberkas cupim ham. Turducken jerky pork chop pork loin. Ball tip doner leberkas chuck beef jowl landjaeger.
-              </li>
-              <li id="bacon">
-                Jerky landjaeger jowl, corned beef shoulder cow prosciutto capicola turducken doner tongue. Turkey ball tip alcatra, tenderloin pastrami short ribs landjaeger beef bacon rump corned beef bresaola ham meatloaf boudin. Venison turkey doner drumstick. Chuck tail jowl meatball spare ribs. Tenderloin frankfurter spare ribs turkey shank capicola rump.
-              </li>
-              <li id="pork">
-                Pig short loin ham cow. Bresaola turducken jowl pig flank filet mignon beef short loin. Strip steak biltong ball tip, sirloin pork belly shankle salami venison picanha beef ribs landjaeger turkey kevin. Venison fatback tri-tip swine. Tenderloin jerky pork belly porchetta drumstick. Cupim sirloin short loin, tri-tip tail cow shoulder ground round turkey fatback corned beef pork strip steak meatloaf.
-              </li>
-            </ul> 
-          </div>
-        </div>
-      </article>
-    </section><!--/#components-->
-    
-    <section id="tables" class="container bvp-xlrg">
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Tables</h4>
-
-          <div class="table-wrap responsive-table">
-            <table class="table bordered-table striped-table">
-              <thead>
-                <tr>
-                  <th>Created</th>
-                  <th>Modified</th>
-                  <th>User Name</th>
-                  <th>Email Address</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1/10/2015</td>
-                  <td>1/21/2015</td>
-                  <td>hitman007</td>
-                  <td>m.smith@someemail.com</td>
-                </tr>
-                <tr>
-                  <td>12/23/2014</td>
-                  <td>1/2/2015</td>
-                  <td>porkbutt00</td>
-                  <td>paul123@someemail.com</td>
-                </tr>
-                <tr>
-                  <td>7/5/2014</td>
-                  <td>11/9/2014</td>
-                  <td>samueljackson3</td>
-                  <td>sjackson76@someemail.com</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </article>
-    </section><!--/#tables-->
-    
-    <section id="forms" class="container bvp-xlrg">
-      <article class="row">
-        <div class="twelve columns">
-          <h4>Forms &amp; Form Inputs</h4>
-
-          <fieldset>
-            <p>
-              This is just to show some examples of baseline stylings of form inputs and form elements. Depending on the grid framework used, you can wrap each row of inline inputs &amp; elements in &quot;row&quot;, then each element in column classes.
-            </p>
-
-            <form>
-              <div class="row">
-                <div class="one-half column">
-                  <label for="firstname">First Name</label>
-                  <input class="form-input" type="text" placeholder="Enter Your First Name" />
-                </div>
-
-                <div class="one-half column">
-                  <label for="lastname">Last Name</label>
-                  <input class="form-input" type="text" placeholder="Enter Your Last Name" />
-                </div>
+      <header class="header-wrap">
+        <div class="container">
+          <div class="row">
+            <div class="four columns">
+              <div class="logo">
+                <img src="images/one-framework-logo.png" title="one framework" />
               </div>
+            </div>
+            
+            <div class="eight columns">
+              <nav class="primary-nav float-right">
+                <ul>
+                  <li><a href="index.html">Core</a></li>
+                  <li><a href="effects.html">Effects</a></li>
+                  <li><a href="#">Extras</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
 
-              <div class="row">
-                <label for="email">Email</label>
-                <input class="form-input" type="text" placeholder="Enter Your Email Address" />
-              </div>
-
-              <div class="row">
-                <label for="states">Select Your State</label>
-                <select class="form-input">
-                  <option>Select a State</option>
-                  <option>Alabama</option>
-                  <option>Alaska</option>
-                  <option>Arizona</option>
-                  <option>Arkansas</option>
-                  <option>California</option>
-                  <option>Colorado</option>
-                  <option>Connecticut</option>
-                  <option>Delaware</option>
-                  <option>District of Columbia</option>
-                  <option>Florida</option>
-                  <option>Georgia</option>
-                  <option>Hawaii</option>
-                  <option>Idaho</option>
-                  <option>Illinois</option>
-                  <option>Indiana</option>
-                  <option>Iowa</option>
-                  <option>Kansas</option>
-                  <option>Kentucky</option>
-                  <option>Louisiana</option>
-                  <option>Maine</option>
-                  <option>Maryland</option>
-                  <option>Massachusetts</option>
-                  <option>Michigan</option>
-                  <option>Minnesota</option>
-                  <option>Mississippi</option>
-                  <option>Missouri</option>
-                  <option>Montana</option>
-                  <option>Nebraska</option>
-                  <option>Nevada</option>
-                  <option>New Hampshire</option>
-                  <option>New Jersey</option>
-                  <option>New Mexico</option>
-                  <option>New York</option>
-                  <option>North Carolina</option>
-                  <option>North Dakota</option>
-                  <option>Ohio</option>
-                  <option>Oklahoma</option>
-                  <option>Oregon</option>
-                  <option>Pennsylvania</option>
-                  <option>Rhode Island</option>
-                  <option>South Carolina</option>
-                  <option>South Dakota</option>
-                  <option>Tennessee</option>
-                  <option>Texas</option>
-                  <option>Utah</option>
-                  <option>Vermont</option>
-                  <option>Virginia</option>
-                  <option>Washington</option>
-                  <option>West Virginia</option>
-                  <option>Wisconsin</option>
-                  <option>Wyoming</option>
-                </select>
-              </div>
-              
-              <div class="row radio-input">
-                <p>
-                  <strong>Radio Input Types</strong>
+      <section class="banner full-width centered">
+        <div class="container">
+          <div class="row">
+            <div class="twelve columns">
+              <div class="intro">
+                <h1>Welcome to ONE</h1>
+                <p class="lrg-text">
+                  This is a framework dedicated to simplicity. Write less, do more.
                 </p>
                 
-                <div class="row">
-                  <div class="one-half column">
-                    <label>
-                      <input type="radio" name="options" value="option1" />
-                      Make Sure that you selected something!
-                    </label>
-                    
-                    <label>
-                      <input type="radio" name="options" value="option3" />
-                      You can only make one decision.
-                    </label>
-                    
-                    <label>
-                      <input type="radio" name="options" value="option5" />
-                      It has to be one of these options.
-                    </label>
-                  </div>
-
-                  <div class="one-half column">
-                    <label>
-                      <input type="radio" name="options" value="option2" />
-                      So Many Options!
-                    </label>
-                    
-                    <label>
-                      <input type="radio" name="options" value="option4" />
-                      Pick One, Don't be hasty!
-                    </label>
-                    
-                    <label>
-                      <input type="radio" name="options" value="option6" />
-                      What if this was the one?
-                    </label>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="row checkbox-input">
                 <p>
-                  <strong>Checkbox Input Types</strong>
+                	<a class="btn btn-white-border" href="#">Learn More</a>
                 </p>
-
-                <label>
-                  <input type="checkbox" checked="" value="option1" />
-                  Option 1
-                </label>
-          
-                <label>
-                  <input type="checkbox" value="option2" />
-                  Option 2
-                </label>
-              
-                <label>
-                  <input type="checkbox" value="option3" />
-                  Option 3
-                </label>
               </div>
-
-              <div class="row">
-                <label for="comments">Comments</label>
-                <textarea class="form-input" placeholder="Enter Your Comments"></textarea>
-              </div>
-
-              <button class="btn btn-flat-primary" type="submit">Submit</button>
-            </form>
-          </fieldset>
+            </div>
+          </div>
         </div>
-      </article>
-    </section><!--/#forms-->
+      </section>
 
-    <footer class="footer-wrap">
-      <section class="container">
+      <section id="typography" class="container">
         <article class="row">
           <div class="twelve columns">
-            <div class="footer-meta text-centered">
-              Designed by and for the dudes @ AudiologyDesign. Copyright 2015 | All Rights Reserved..... so don't even try it.
+            <h1>This is a h1 heading</h1>
+            <h2>This is a h2 heading</h2>
+            <h3>This is a h3 heading</h3>
+            <h4>This is a h4 heading</h4>
+            <h5>This is a h5 heading</h5>
+            <h6>This is a h6 heading</h6>
+          </div>
+        </article><!--/.row-->
+        
+        <hr />
+        
+        <article class="row">
+          <div class="twelve columns">
+            <h3>This is a text block with a link</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Donec scelerisque neque quam;</a> et accumsan augue egestas quis. Mauris id lacinia lacus, nec lobortis nisi. In vel neque sit amet massa faucibus dictum. Pellentesque egestas tortor sed consectetur semper. Aenean et lectus mi. Nullam velit ipsum, dapibus in nunc ac, hendrerit consectetur tortor? Curabitur auctor, ipsum sit amet vehicula scelerisque, mauris nibh facilisis neque, vitae cursus metus purus vel ante. In blandit felis sem; id porta leo placerat at. Cras dignissim in sem in porttitor. Praesent elementum mi non justo condimentum ultrices. Curabitur ac luctus dui, in placerat velit.
+            </p>
+          </div>
+        </article>
+            
+        <hr />
+
+        <article class="row">
+          <div class="twelve columns">
+            <h3>This is a blockquote</h3>
+
+            <blockquote>
+              To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.
+              <cite>Ralph Waldo Emerson</cite>
+            </blockquote>
+          </div>
+        </article>
+      </section><!--/#typography-->
+      
+      <section id="buttons" class="container">
+        <article class="row">
+          <div class="twelve columns">
+            <h1 class="with-border">Button Examples</h1>
+      
+            <h4>Default Buttons</h4>
+            <p>
+              <a class="btn" href="#">default button</a>
+              <a class="btn btn-primary" href="#">primary button</a>
+              <a class="btn btn-secondary" href="#">secondary button</a>
+              <a class="btn btn-tertiary" href="#">tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+            
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Flat Square Buttons</h4>
+            <p>
+              <a class="btn btn-flat" href="#">default button</a>
+              <a class="btn btn-flat-primary" href="#">primary button</a>
+              <a class="btn btn-flat-secondary" href="#">secondary button</a>
+              <a class="btn btn-flat-tertiary" href="#">tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Flat Rounded Buttons</h4>
+            <p>
+              <a class="btn btn-rounded btn-flat" href="#">default button</a>
+              <a class="btn btn-rounded btn-flat-primary" href="#">primary button</a>
+              <a class="btn btn-rounded btn-flat-secondary" href="#">secondary button</a>
+              <a class="btn btn-rounded btn-flat-tertiary" href="#">tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-rounded btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+            
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Flat Pill Buttons</h4>
+            <p>
+              <a class="btn btn-pill btn-flat" href="#">default button</a>
+              <a class="btn btn-pill btn-flat-primary" href="#">primary button</a>
+              <a class="btn btn-pill btn-flat-secondary" href="#">secondary button</a>
+              <a class="btn btn-pill btn-flat-tertiary" href="#">tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-pill btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+            
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Border Buttons</h4>
+            <p>
+              <a class="btn btn-border" href="#">default button</a>
+              <a class="btn btn-border-primary" href="#">primary button</a>
+              <a class="btn btn-border-secondary" href="#">secondary button</a>
+              <a class="btn btn-border-tertiary" href="#">tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-border-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="row">
+          <div class="twelve columns">
+            <h4>3D Buttons</h4>
+            <p>
+              <a class="btn btn-3d" href="#">default button</a>
+              <a class="btn btn-3d-primary" href="#">primary button</a>
+              <a class="btn btn-3d-secondary" href="#">secondary button</a>
+              <a class="btn btn-3d-tertiary" href="#">tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-3d-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Icon Buttons</h4>
+            <p>
+              <a class="btn btn-flat" href="#"><i class="fa fa-github"></i> default button</a>
+              <a class="btn btn-flat-primary" href="#"><i class="fa fa-code"></i> primary button</a>
+              <a class="btn btn-flat-secondary" href="#"><i class="fa fa-envelope"></i> secondary button</a>
+              <a class="btn btn-flat-tertiary" href="#"><i class="fa fa-camera"></i> tertiary button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-flat-primary"</span>&gt;&lt;i class=<span class="string">"fa fa-camera"</span>&gt; Example Button&lt;/i&gt;&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+
+        <hr />
+
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Button Sizes</h4>
+            <p>
+              <a class="btn btn-flat btn-jumbo" href="#">jumbo button</a>
+              <a class="btn btn-flat btn-large" href="#">large button</a>
+              <a class="btn btn-flat btn-medium" href="#">medium button</a>
+              <a class="btn btn-flat btn-small" href="#">small button</a>
+            </p>
+
+            <pre>
+              <div class="code-wrap">
+                <span>
+                  <strong>Example:</strong> &lt;a href=<span class="string">"#"</span> class=<span class="string">"btn btn-jumbo btn-flat-primary"</span>&gt;Example Button&lt;/a&gt;
+                </span>
+              </div>
+            </pre>
+          </div>
+        </article>
+      </section><!--/#buttons-->
+
+      <section id="components" class="container">
+        <article class="row">
+          <div class="six columns">
+            <h4>Simple Accordion</h4>
+
+            <div class="accordion">
+              <h4 class="acc-trigger">
+                <a href="#">What Kind of pizza should I get?</a>
+              </h4>
+              <div class="acc-detail">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
+                </p>
+              </div>
+
+              <h4 class="acc-trigger">
+                <a href="#">What bourbon goes best with pizza?</a>
+              </h4>
+              <div class="acc-detail">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
+                </p>
+              </div>
+
+              <h4 class="acc-trigger">
+                <a href="#">Should I get sicilian or deep-dish?</a>
+              </h4>
+              <div class="acc-detail">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut egestas sapien. Vivamus tellus enim; aliquet quis ante in, fermentum finibus lacus? Morbi et tellus in est efficitur condimentum. 
+                </p>
+              </div>
+            </div>
+          </div><!--.eight columns-->
+
+          <div class="six columns">
+            <h4>Simple Tabs</h4>
+
+            <div class="tab-wrapper">
+              <ul class="tabs">
+                <!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
+                <li><a class="active" href="#beef">Beef</a></li>
+                <li><a href="#bacon">Bacon</a></li>
+                <li><a href="#pork">Pork</a></li>
+              </ul>
+               
+              <!-- Standard <ul> with class of "tabs-content" -->
+              <ul class="tabs-content">
+                <!-- Give ID that matches HREF of above anchors -->
+                <li class="active" id="beef">
+                  Beef bacon ground round pastrami short ribs meatball doner fatback ball tip boudin biltong tail prosciutto pig alcatra. Picanha ball tip chicken brisket tongue ground round ham spare ribs meatloaf fatback bacon. Short loin sirloin cow beef ribs bacon picanha pig leberkas cupim ham. Turducken jerky pork chop pork loin. Ball tip doner leberkas chuck beef jowl landjaeger.
+                </li>
+                <li id="bacon">
+                  Jerky landjaeger jowl, corned beef shoulder cow prosciutto capicola turducken doner tongue. Turkey ball tip alcatra, tenderloin pastrami short ribs landjaeger beef bacon rump corned beef bresaola ham meatloaf boudin. Venison turkey doner drumstick. Chuck tail jowl meatball spare ribs. Tenderloin frankfurter spare ribs turkey shank capicola rump.
+                </li>
+                <li id="pork">
+                  Pig short loin ham cow. Bresaola turducken jowl pig flank filet mignon beef short loin. Strip steak biltong ball tip, sirloin pork belly shankle salami venison picanha beef ribs landjaeger turkey kevin. Venison fatback tri-tip swine. Tenderloin jerky pork belly porchetta drumstick. Cupim sirloin short loin, tri-tip tail cow shoulder ground round turkey fatback corned beef pork strip steak meatloaf.
+                </li>
+              </ul> 
             </div>
           </div>
         </article>
-      </section>
-    </footer>
+      </section><!--/#components-->
+      
+      <section id="tables" class="container">
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Tables</h4>
+
+            <div class="table-wrap responsive-table">
+              <table class="table bordered-table striped-table">
+                <thead>
+                  <tr>
+                    <th>Created</th>
+                    <th>Modified</th>
+                    <th>User Name</th>
+                    <th>Email Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1/10/2015</td>
+                    <td>1/21/2015</td>
+                    <td>hitman007</td>
+                    <td>m.smith@someemail.com</td>
+                  </tr>
+                  <tr>
+                    <td>12/23/2014</td>
+                    <td>1/2/2015</td>
+                    <td>porkbutt00</td>
+                    <td>paul123@someemail.com</td>
+                  </tr>
+                  <tr>
+                    <td>7/5/2014</td>
+                    <td>11/9/2014</td>
+                    <td>samueljackson3</td>
+                    <td>sjackson76@someemail.com</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+      </section><!--/#tables-->
+      
+      <section id="forms" class="container">
+        <article class="row">
+          <div class="twelve columns">
+            <h4>Forms &amp; Form Inputs</h4>
+
+            <fieldset>
+              <p>
+                This is just to show some examples of baseline stylings of form inputs and form elements. Depending on the grid framework used, you can wrap each row of inline inputs &amp; elements in &quot;row&quot;, then each element in column classes.
+              </p>
+
+              <form>
+                <div class="row">
+                  <div class="one-half column">
+                    <label for="firstname">First Name</label>
+                    <input class="form-input" type="text" placeholder="Enter Your First Name" />
+                  </div>
+
+                  <div class="one-half column">
+                    <label for="lastname">Last Name</label>
+                    <input class="form-input" type="text" placeholder="Enter Your Last Name" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="twelve columns">
+                    <label for="email">Email</label>
+                    <input class="form-input" type="text" placeholder="Enter Your Email Address" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="twelve columns">
+                    <label for="states">Select Your State</label>
+                    <select class="form-input">
+                      <option>Select a State</option>
+                      <option>Alabama</option>
+                      <option>Alaska</option>
+                      <option>Arizona</option>
+                      <option>Arkansas</option>
+                      <option>California</option>
+                      <option>Colorado</option>
+                      <option>Connecticut</option>
+                      <option>Delaware</option>
+                      <option>District of Columbia</option>
+                      <option>Florida</option>
+                      <option>Georgia</option>
+                      <option>Hawaii</option>
+                      <option>Idaho</option>
+                      <option>Illinois</option>
+                      <option>Indiana</option>
+                      <option>Iowa</option>
+                      <option>Kansas</option>
+                      <option>Kentucky</option>
+                      <option>Louisiana</option>
+                      <option>Maine</option>
+                      <option>Maryland</option>
+                      <option>Massachusetts</option>
+                      <option>Michigan</option>
+                      <option>Minnesota</option>
+                      <option>Mississippi</option>
+                      <option>Missouri</option>
+                      <option>Montana</option>
+                      <option>Nebraska</option>
+                      <option>Nevada</option>
+                      <option>New Hampshire</option>
+                      <option>New Jersey</option>
+                      <option>New Mexico</option>
+                      <option>New York</option>
+                      <option>North Carolina</option>
+                      <option>North Dakota</option>
+                      <option>Ohio</option>
+                      <option>Oklahoma</option>
+                      <option>Oregon</option>
+                      <option>Pennsylvania</option>
+                      <option>Rhode Island</option>
+                      <option>South Carolina</option>
+                      <option>South Dakota</option>
+                      <option>Tennessee</option>
+                      <option>Texas</option>
+                      <option>Utah</option>
+                      <option>Vermont</option>
+                      <option>Virginia</option>
+                      <option>Washington</option>
+                      <option>West Virginia</option>
+                      <option>Wisconsin</option>
+                      <option>Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="row radio-input">
+                  <div class="twelve columns">
+                    <p>
+                      <strong>Radio Input Types</strong>
+                    </p>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="one-half column">
+                      <label>
+                        <input type="radio" name="options" value="option1" />
+                        Make Sure that you selected something!
+                      </label>
+                      
+                      <label>
+                        <input type="radio" name="options" value="option3" />
+                        You can only make one decision.
+                      </label>
+                      
+                      <label>
+                        <input type="radio" name="options" value="option5" />
+                        It has to be one of these options.
+                      </label>
+                    </div>
+
+                    <div class="one-half column">
+                      <label>
+                        <input type="radio" name="options" value="option2" />
+                        So Many Options!
+                      </label>
+                      
+                      <label>
+                        <input type="radio" name="options" value="option4" />
+                        Pick One, Don't be hasty!
+                      </label>
+                      
+                      <label>
+                        <input type="radio" name="options" value="option6" />
+                        What if this was the one?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row checkbox-input">
+                  <div class="twelve columns">
+                    <p>
+                      <strong>Checkbox Input Types</strong>
+                    </p>
+
+                    <label>
+                      <input type="checkbox" checked="" value="option1" />
+                      Option 1
+                    </label>
+              
+                    <label>
+                      <input type="checkbox" value="option2" />
+                      Option 2
+                    </label>
+                  
+                    <label>
+                      <input type="checkbox" value="option3" />
+                      Option 3
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="twelve columns">
+                    <label for="comments">Comments</label>
+                    <textarea class="form-input" placeholder="Enter Your Comments"></textarea>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="twelve columns">
+                    <button class="btn btn-flat-primary" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </fieldset>
+          </div>
+        </article>
+      </section><!--/#forms-->
+
+      <footer class="footer-wrap">
+        <section class="container">
+          <article class="row">
+            <div class="twelve columns">
+              <div class="footer-meta text-centered">
+                Designed by and for the dudes @ AudiologyDesign. Copyright 2015 | All Rights Reserved..... so don't even try it.
+              </div>
+            </div>
+          </article>
+        </section>
+      </footer>
+    </div><!--/.page-wrapper-->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
