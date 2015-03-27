@@ -1,7 +1,27 @@
 
 // Global Variables
+// 
+// Table of Contents
+//
+// 1)  Font Imports
+// 2)  Site Branding Colors
+// 3)  Default Base Colors
+// 4)  Base Typography
+// 5)  Spacing
+// 6)  Navigation
+// 7)  Buttons
+// 8)  Accordion
+// 9)  Tabs
+// 10) Tables
+// 11) Forms
+// 12) Responsive Nav
+// ========================================================================== //
 
-// Site Branding Colors ------------------- //
+// 1. Google Font Import ------------------- //
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+// 2. Site Branding Colors ------------------- //
 
 $base-body-bg-color:      #ffffff;
 
@@ -11,8 +31,14 @@ $primary-accent-color:    #e24f3d;
 $secondary-accent-color:  #73c6de;
 $tertiary-accent-color:   #666666;
 
+$body-font: 'Open Sans', sans-serif;
+$body-font-color: #333333;
 
-// Base Colors ------------------- //
+$heading-font: $body-font;
+$heading-font-color: #222222;
+
+
+// 3. Base Colors ------------------- //
 
 $white:     #fff !default;
 $black:     #000 !default;
@@ -20,14 +46,14 @@ $grey:      #333 !default;
 $lightgrey: #f9f9f9 !default;
 $darkgrey:  #222 !default;
 
-// Base Typography -------------- //
+// 4. Base Typography -------------- //
 
-$base-font: Helvetica, Arial, sans-serif;
+$base-font: $body-font !default;
 $base-font-size: 16px !default;
-$base-font-weight: 300 !default;
-$base-font-color: $grey !default;
-$base-line-height:             1.428571429 !default; // 20/14
-$base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 20px
+$base-font-weight: 400 !default;
+$base-font-color: $body-font-color !default;
+$base-line-height:             1.428571429 !default; // 23/16
+$base-line-height-computed:    ceil($base-font-size * $base-line-height) !default; // 23px
 
 $base-link-color: $primary-accent-color !default;
 $base-link-hover-color: lighten($primary-accent-color, 5%) !default;
@@ -39,35 +65,34 @@ $base-title-h4: ceil($base-font-size * 1.35) !default; // 22px
 $base-title-h5: ceil($base-font-size * 1.25) !default; // 20px
 $base-title-h6: ceil($base-font-size * 1.10) !default; // 18px
 
-$base-title-font:           $base-font !default;
+$base-title-font:           $heading-font !default;
 $base-title-font-weight:    500 !default;
 $base-title-line-height:    1.1 !default;
-$base-title-color:          darken($base-font-color, 10%) !default;
+$base-title-color:          $heading-font-color !default;
 
 $lrg-text: ceil($base-font-size * 1.2) !default;
 $sm-text:  floor($base-font-size * 0.65) !default;
 
 
-// Spacing --------------------- //
+// 5. Spacing --------------------- //
 
 $nomargin:  0px !default;
 $nopadding: 0px !default;
 
+$base-margin:  10px !default;
+$base-padding: 10px !default;
+
 // Vertical //
 
-$base-vertical-margin:  10px !default;
-$base-vertical-padding: 10px !default;
+$base-vertical-margin:  $base-margin;
+$base-vertical-padding: $base-padding;
 
 // Horizontal //
 
-$base-horizontal-margin:  10px !default;
-$base-horizontal-padding: 10px !default;
+$base-horizontal-margin:  $base-margin;
+$base-horizontal-padding: $base-padding;
 
-// Header --------------------- //
-
-
-
-// Navigation --------------------- //
+// 6. Navigation --------------------- //
 
 $base-nav-class:  ".primary-nav";
 $base-nav-height: 50px;
@@ -80,11 +105,11 @@ $base-nav-line-height:      $base-nav-height;
 
 $base-nav-dropdown-color:   $primary-accent-color;
 
-// Buttons --------------------- //
+// 7. Buttons --------------------- //
 
 $base-btn-class:  ".btn";
 $base-btn-color:  $default-color;
-$base-btn-height: ceil($base-font-size * 2.5);
+$base-btn-height: ceil($base-font-size * 3.12);
 
 $base-btn-font-color:  #222 !default;
 $base-btn-font-size:   $base-font-size;
@@ -95,10 +120,10 @@ $base-btn-font-family: $base-font;
 // name -> pre-defined accent color -> font color
 $base-btn-accent-colors: ('primary' $primary-accent-color #fff) ('secondary' $secondary-accent-color #fff) ('tertiary' $tertiary-accent-color #fff);
 
-$base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d';
+$base-btn-styles: 'flat' 'rounded' 'pill' 'border' '3d' 'white-border';
 $base-btn-sizes:  'small' 'medium' 'large' 'jumbo';
 
-// Accordion --------------------- //
+// 8. Accordion --------------------- //
 
 $base-acc-trigger-color:      $primary-accent-color;
 $base-acc-trigger-font-color: $white;
@@ -108,18 +133,19 @@ $base-acc-detail-font-size:   $base-font-size;
 $base-acc-detail-font-color:  $base-font-color;
 
 
-// Tabs --------------------- //
+// 9. Tabs --------------------- //
 
 $base-tab-class:                ".tabs";
-$base-tabs-color:               $primary-accent-color;
-$base-tabs-active-color:        darken($base-tabs-color, 5%);
+$base-tabs-color:               darken($lightgrey, 5%);
+$base-tabs-active-color:        $primary-accent-color;
 $base-tabs-font-size:           $base-font-size;
-$base-tabs-font-color:          $white;
-$base-tabs-height:              ceil($base-font-size * 2.2);
-$base-tabs-content-bg-color:    $lightgrey;
+$base-tabs-font-color:          $base-font-color;
+$base-tabs-height:              ceil($base-font-size * 3);
+$base-tabs-content-bg-color:    $white;
+$base-tabs-accent-border-color: $base-tabs-active-color;
 $base-tabs-content-font-color:  $base-font-color;
 
-// Tables --------------------- //
+// 10. Tables --------------------- //
 
 $base-table-cell-padding:           8px !default;
 $base-table-condensed-cell-padding: 5px !default;
@@ -127,10 +153,25 @@ $base-table-bg-color:               transparent !default;
 $base-table-bg-accent-color:        $lightgrey;
 $base-table-border-color:           darken($lightgrey, 10%);
 
-// Forms --------------------- //
+// 11. Forms --------------------- //
 
 $base-input-background-color: $white;
 $base-input-border-color:     $default-color;
 $base-input-focus-color:      #4bc9e6;
+
+// 12. Responsive Menu Custom Theme
+
+$custom-menu-class:                 ".mm-custom";
+$custom-menu-page-shadow:           0 0 10px rgba(0, 0, 0, 0.3);
+$custom-menu-border-color:          rgba(0, 0, 0, 0.1);
+$custom-menu-background-color:      #39424D;
+$custom-menu-emphasized-bg-color:   rgba(0, 0, 0, 0.1);
+$custom-menu-highlighted-bg-color:  rgba(0, 0, 0, 0.03);
+$custom-menu-text-color:            rgba(255, 255, 255, 0.8);
+$custom-menu-dimmed-text-color:     rgba(255, 255, 255, 0.8);
+$custom-menu-input-bg-color:        rgba(0, 0, 0, 0.1);  
+
+
+
 
 

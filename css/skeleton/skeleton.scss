@@ -8,29 +8,15 @@
 * Sass Version by Seth Coelen https://github.com/whatsnewsaes
 */
 
-// Table of contents
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-//- Grid
-//- Utilities
-//- Clearing
-//- Media Queries
-
-
-// Variables
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
 // Breakpoints
-$bp-larger-than-mobile    : "min-width: 400px" !default;
-$bp-larger-than-phablet   : "min-width: 550px" !default;
-$bp-larger-than-tablet    : "min-width: 750px" !default;
-$bp-larger-than-desktop   : "min-width: 1000px" !default;
-$bp-larger-than-desktophd : "min-width: 1200px" !default;
-
+$breakpoint-mobile    : "min-width: 480px" !default;
+$breakpoint-phablet   : "min-width: 550px" !default;
+$breakpoint-tablet    : "min-width: 768px" !default;
+$breakpoint-desktop   : "min-width: 1024px" !default;
+$breakpoint-desktophd : "min-width: 1200px" !default;
 
 //Grid Variables
 $container-width: 1200px !default;
-$container-width-larger-than-mobile: 85% !default;
-$container-width-larger-than-phablet: 80% !default;
 $total-columns: 12 !default;
 $column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
 $column-margin: 4% !default; // space between columns
@@ -63,22 +49,42 @@ $column-margin: 4% !default; // space between columns
   box-sizing: border-box;
 }
 
-form .row:first-child,
-.row + .row { margin-bottom: 10px; }
+// For devices larger than 768px
+@media (#{$breakpoint-tablet}) {
+  
+  .one.column,
+  .one.columns          { width: grid-column-width(1); margin-left: $column-margin; }
+  .two.columns          { width: grid-column-width(2); margin-left: $column-margin; }
+  .three.columns        { width: grid-column-width(3); margin-left: $column-margin; }
+  .four.columns         { width: grid-column-width(4); margin-left: $column-margin; }
+  .five.columns         { width: grid-column-width(5); margin-left: $column-margin; }
+  .six.columns          { width: grid-column-width(6); margin-left: $column-margin; }
 
-// For devices larger than 400px
-@media (#{$bp-larger-than-mobile}) {
-  .container {
-    width: $container-width-larger-than-mobile;
-    padding: 0;
+  .one.column:first-child,
+  .one.columns:first-child,        
+  .two.columns:first-child,         
+  .three.columns:first-child,        
+  .four.columns:first-child,
+  .five.columns:first-child,
+  .six.columns:first-child,
+  .one-third.column:first-child,
+  .two-thirds.column:first-child,
+  .one-half.column:first-child {
+    margin-left: 0;
   }
+        
+  .seven.columns,        
+  .eight.columns,        
+  .nine.columns,         
+  .ten.columns,         
+  .eleven.columns, 
+  .twelve.columns       { width: 100%; }
+
 }
 
-// For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
-  .container {
-    width: $container-width-larger-than-phablet;
-  }
+// For devices larger than 1024px
+@media (#{$breakpoint-desktop}) {
+  
   .column,
   .columns {
     margin-left: $column-margin;
@@ -139,22 +145,7 @@ form .row:first-child,
   .offset-by-two-thirds.columns { margin-left: grid-offset-length(8);  }
 
   .offset-by-one-half.column,
-  .offset-by-one-half.column   { margin-left: grid-offset-length(6);  }
-
-
-}
-
-// Utilities
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box;
+  .offset-by-one-half.column    { margin-left: grid-offset-length(6);  }
 }
 
 // Clearing
@@ -163,32 +154,8 @@ form .row:first-child,
 // Self Clearing Goodness
 
 .container:after,
-.row:after,
-.u-cf {
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-// Media Queries
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-// Note: The best way to structure the use of media queries is to create the queries
-// near the relevant code. For example, if you wanted to change the styles for buttons
-// on small devices, paste the mobile query code up in the buttons section and style it
-// there.
-
-// Larger than mobile
-@media (#{$bp-larger-than-mobile}) {}
-
-// Larger than phablet (also point when grid becomes active)
-@media (#{$bp-larger-than-phablet}) {}
-
-// Larger than tablet
-@media (#{$bp-larger-than-tablet}) {}
-
-// Larger than desktop
-@media (#{$bp-larger-than-desktop}) {}
-
-// Larger than Desktop HD
-@media (#{$bp-larger-than-desktophd}) {}
