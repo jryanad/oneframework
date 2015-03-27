@@ -221,7 +221,7 @@
   }
 }
 form > .row,
-.row + .row {
+form .row + .row {
   margin-bottom: 10px;
 }
 

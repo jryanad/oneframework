@@ -152,7 +152,7 @@ $column-margin: 4% !default; // space between columns
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 form > .row,
-.row + .row {
+form .row + .row {
   margin-bottom: 10px;
 }
 
