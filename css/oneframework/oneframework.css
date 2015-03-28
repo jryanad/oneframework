@@ -211,6 +211,16 @@ hr {
   box-sizing: content-box;
 }
 
+*::-moz-selection {
+  background: #e24f3d;
+  color: #fff;
+}
+
+*::selection {
+  background: #e24f3d;
+  color: #fff;
+}
+
 /* Sizing Classes -------------*/
 /* Verticals  bvm = base-vertical-margin, bvp = base-vertical-padding (10px) */
 .bvm {
