@@ -20,7 +20,7 @@
 pre {
 	background-color: #39424D;
 	margin-top: $base-margin * 2;
-	padding: ($base-padding * 3) ($base-padding);
+	padding: ($base-padding * 3) $base-padding;
 	color: $white;
 	display: block;
 	word-break: normal;
