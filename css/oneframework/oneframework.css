@@ -2279,6 +2279,7 @@ input.btn, button.btn {
 .btn-3d-primary {
   background-image: linear-gradient(top, #e35746, #e14734);
   background-color: #e24f3d;
+  margin-bottom: 15px;
   color: #fff;
   position: relative;
   top: 0px;
@@ -2383,6 +2384,7 @@ input.btn, button.btn {
 .btn-3d-secondary {
   background-image: linear-gradient(top, #7bc9e0, #6bc3dc);
   background-color: #73c6de;
+  margin-bottom: 15px;
   color: #fff;
   position: relative;
   top: 0px;
@@ -2487,6 +2489,7 @@ input.btn, button.btn {
 .btn-3d-tertiary {
   background-image: linear-gradient(top, #6b6b6b, #616161);
   background-color: #666666;
+  margin-bottom: 15px;
   color: #fff;
   position: relative;
   top: 0px;
