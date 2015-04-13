@@ -328,6 +328,7 @@ input#{$base-btn-class}, button#{$base-btn-class} {
     #{$base-btn-class}-3d-#{$base-btn-accent-name} {
       background-image: linear-gradient(top, lighten($base-btn-accent-bg-color, 2%), darken($base-btn-accent-bg-color, 2%));
       background-color: $base-btn-accent-bg-color;
+      margin-bottom: 15px;
       color: $base-btn-accent-font-color;
       position: relative;
       top: 0px;

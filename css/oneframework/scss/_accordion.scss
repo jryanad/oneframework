@@ -47,3 +47,9 @@ h4.acc-trigger a.open .icon-openClose:before{
   font-family: "FontAwesome";
   content: "\f056" !important;
 }
+
+@media (max-width: 480px) {
+  h4.acc-trigger a {
+    font-size: ($base-acc-trigger-font-size - 4);
+  }
+}
