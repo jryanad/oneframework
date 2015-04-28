@@ -341,6 +341,32 @@ hr {
   visibility: hidden !important;
 }
 
+.list-inline {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.list-inline:before, .list-inline:after {
+  content: " ";
+  display: table;
+}
+.list-inline:after {
+  clear: both;
+}
+.list-inline > li {
+  margin: 0 0 0 5px;
+  padding: 0 5px;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+.list-inline > li:first-child {
+  margin-left: 0px;
+}
+.list-inline > li > * {
+  display: block;
+}
+
 img {
   width: 100%;
   max-width: 100%;

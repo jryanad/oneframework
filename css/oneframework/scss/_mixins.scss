@@ -47,6 +47,30 @@
   display: table;
 }
 
+// Inline Lists
+
+@mixin list-inline($list-item-margin, $list-item-padding) {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  @include clearfix;
+  & > li {
+    margin: 0 0 0 $list-item-margin;
+    padding: 0 $list-item-padding;
+    float: left;
+    display: inline-block;
+    text-align: center;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+
+    & > * {
+      display: block;
+    }
+  }
+}
+
 // Fixed Positioning
 
 @mixin fx-position ($top, $right, $bottom, $left, $z-index) {
