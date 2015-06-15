@@ -15,6 +15,7 @@
 // 10) Tables
 // 11) Forms
 // 12) Responsive Nav
+// 13) Social Brand Colors
 // ========================================================================== //
 
 // 1. Google Font Import ------------------- //
@@ -171,7 +172,21 @@ $custom-menu-text-color:            rgba(255, 255, 255, 0.8);
 $custom-menu-dimmed-text-color:     rgba(255, 255, 255, 0.8);
 $custom-menu-input-bg-color:        rgba(0, 0, 0, 0.1);  
 
+// 13. Social Branding Colors
 
+$facebook-brand-color:    #3b5998;
+$twitter-brand-color:     #00aced;
+$google-plus-brand-color: #dd4b39;
+$youtube-brand-color:     #bb0000;
+$linkedin-brand-color:    #007bb6;
+$yelp-brand-color:        #B4282E;
+$pinterest-brand-color:   #cb2027;
+
+$base-social-class:       ".btn-social";
+$base-social-size:        ceil($base-font-size * 2.2);
+$base-social-line-height: $base-social-size;
+
+$base-social-brand-colors: ('facebook' $facebook-brand-color) ('twitter' $twitter-brand-color) ('google-plus' $google-plus-brand-color) ('youtube' $youtube-brand-color) ('linkedin' $linkedin-brand-color) ('yelp' $yelp-brand-color) ('pinterest' $pinterest-brand-color);
 
 
 

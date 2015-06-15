@@ -9,8 +9,8 @@
 @media only screen and (max-width: 1023px) {
 
   #hamburger {
-    width: 70px;
-    height: 45px;
+    width: 26px;
+    height: 40px;
     display: block;
     float: right;
     @include rel-position(2);
@@ -20,18 +20,18 @@
 
   #hamburger::before, #hamburger::after, #hamburger span {
     background: #fff;
-    width: 30px;
+    width: 26px;
     height: 3px;
     content: "";
     display: block;
     position: absolute;
-    left: 20px;
+    left: 0px;
     @include border-radius(4px);
   }
 
   #hamburger::before { top: 10px; }
-  #hamburger span    { top: 20px; }
-  #hamburger::after  { top: 30px; }
+  #hamburger span    { top: 18px; }
+  #hamburger::after  { top: 26px; }
 
   #hamburger::before, #hamburger::after, #hamburger span {
     transition-delay: 0.5s;
@@ -41,7 +41,7 @@
   }
 
   html.mm-opening #hamburger::before, 
-  html.mm-opening #hamburger::after { top: 20px; }
+  html.mm-opening #hamburger::after { top: 18px; }
 
   html.mm-opening #hamburger span {
     left: -50px;
